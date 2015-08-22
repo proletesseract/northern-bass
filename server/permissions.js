@@ -1,0 +1,1 @@
+// Permissions; how the client can interact with the collections.

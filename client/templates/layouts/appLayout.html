@@ -9,15 +9,17 @@
 
     {{#if isAndroid}}
       {{#ionTabs style="android"}}
-        {{> ionTab title="Timetable" path="timetable" icon="android-star"}}
-        {{> ionTab title="Map" path="map" icon="android-time"}}
+        {{> ionTab title="Home" path="main" icon="android-home"}}
+        {{> ionTab title="Timetable" path="timetable" icon="android-time"}}
+        {{> ionTab title="Map" path="map" icon="android-location"}}
         {{> ionTab title="Faq" path="faq" icon="android-notifications"}}
         {{> ionTab title="Vendors" path="vendors" icon="android-happy"}}
       {{/ionTabs}}
     {{else}}
       {{#ionTabs style="ios"}}
-        {{> ionTab title="Timetable" path="timetable" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
-        {{> ionTab title="Map" path="map" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
+        {{> ionTab title="Home" path="main" iconOff="ios-home" iconOn="ios-home-positive"}}
+        {{> ionTab title="Timetable" path="timetable" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
+        {{> ionTab title="Map" path="map" iconOff="ios-location-outline" iconOn="ios-location" class="tab-item-positive"}}
         {{> ionTab title="Faq" path="faq" iconOff="ios-bell-outline" iconOn="ios-bell" class="tab-item-positive"}}
         {{> ionTab title="Vendors" path="vendors" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-positive"}}
       {{/ionTabs}}

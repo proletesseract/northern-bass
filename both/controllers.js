@@ -13,3 +13,14 @@ MainController = AppController.extend({
   //   };
   // }
 });
+
+TimetableController = AppController.extend({});
+
+MapController = AppController.extend({});
+
+FaqController = AppController.extend({});
+
+LostController = AppController.extend({});
+
+VendorsController = AppController.extend({});
+

@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 25/06/2015, 5:11:38 PM
+    Author     : craigmacgregor
+*/
+
+
+.btn-blue {
+  background: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &.selected {
+    background-color: $yellow;
+  }
+}
+
+.btn-green {
+  background: $green;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &.selected {
+    background-color: $yellow;
+  }
+}
+
+.btn-orange {
+  background: $orange;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &.selected {
+    background-color: $yellow;
+  }
+}
+
+.btn-green-dark {
+  background: $green-dark;
+  color: $white;
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &.selected {
+    background-color: $yellow;
+  }
+  
+}
+
+.btn-green {
+    background: $green;
+    &:hover {
+        background-color: $yellow;
+    }
+    &.selected {
+        background-color: $yellow;
+    }
+}
+
+.btn-orange {
+    background: $orange;
+    &:hover {
+        background-color: $yellow;
+    }
+    &.selected {
+        background-color: $yellow;
+    }
+}

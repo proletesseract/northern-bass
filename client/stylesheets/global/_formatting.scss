@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 22/04/2015, 11:10:42 AM
+    Author     : craigmacgregor
+*/
+
+/* STATES */
+
+.hidden { display: none; }
+.invisible { opacity: 0; }
+
+/* DISPLAY */
+
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+/* ALIGNMENT */
+
+.center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+/* TEXT */
+
+.bold { font-weight: bold; }
+.lighter { font-weight: lighter; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
+
+/* POSITION */
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed { position: fixed; }
+
+/* SIZE */
+
+.full-max-width { max-width: 100%; }
+.full-width { width: 100%; }
+.full-height { height: 100%;}
+
+.one-half { width: 50%; }
+.one-third { width: 33.333%; }
+.one-quarter { width: 25%; }
+.one-fifth { width: 20%; }
+.one-sixth { width: 16.666%; }
+.one-seventh { width: 14.285%; }
+.one-eighth { width: 12.5%; }
+.one-ninth { width: 11.111%; }
+.one-tenth { width: 10%; }
+
+/* LISTS */
+
+.no-bullets { list-style-type: none; margin: 0; padding: 0; }
+.bullets { list-style-type: disc; }
+.alpha { list-style-type: lower-alpha; }
+
+/* FLOAT */
+
+.left { float: left; }
+.right { float: right; }
+.clear-after:after { content: ""; display: table; clear: both; }
+
+/* MARGIN */
+
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }

@@ -1,6 +1,17 @@
 // Custom
-@import 'app-mixins';
-@import 'app-variables';
+@import 'global/settings';
+@import 'global/mixins';
+@import 'global/base';
+@import 'global/colors';
+@import 'global/font';
+@import 'global/formatting';
+@import 'layout/faq';
+@import 'layout/lost';
+@import 'layout/main';
+@import 'layout/map';
+@import 'layout/timetable';
+@import 'layout/vendors';
+@import 'module/btn';
 
 // Ionic
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';

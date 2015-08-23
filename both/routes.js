@@ -14,8 +14,8 @@ Router.route('/map', {
   name: 'map'
 });
 
-Router.route('/faq', {
-  name: 'faq'
+Router.route('/faqs', {
+  name: 'faqs'
 });
 
 Router.route('/lost', {

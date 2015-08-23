@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2015, 4:12:00 PM
+    Author     : craigmacgregor
+*/
+
+.font-black { 
+    color: $black; 
+    &:hover, &:active, &:visited, &:link {
+        color: $black;
+    }
+}
+
+.font-white { 
+    color: $white; 
+    &:hover, &:active, &:visited, &:link {
+        color: $white;
+    }
+}
+
+.font-blue { 
+    color: $blue; 
+    &:hover, &:active, &:visited, &:link {
+        color: $blue;
+    }
+}
+
+.font-green { 
+    color: $green; 
+    &:hover, &:active, &:visited, &:link {
+        color: $green;
+    }
+}
+
+.font-yellow { 
+    color: $yellow; 
+    &:hover, &:active, &:visited, &:link {
+        color: $yellow;
+    }
+}
+
+.font-orange { 
+    color: $orange; 
+    &:hover, &:active, &:visited, &:link {
+        color: $orange;
+    }
+}
+
+.font-grey { 
+    color: $grey; 
+    &:hover, &:active, &:visited, &:link {
+        color: $grey;
+    }
+}
+
+.font-grey-dark { 
+    color: $grey-dark; 
+    &:hover, &:active, &:visited, &:link {
+        color: $grey-dark;
+    }
+}
+
+.font-xxl { 
+    font-size: $font-xxl; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xxl * 0.5;
+    }
+}
+.font-xl { 
+    font-size: $font-xl; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xl * 0.5;
+    }
+}
+.font-large { 
+    font-size: $font-large; 
+    @media (max-width: $mobile-width){
+        font-size: $font-large * 0.7;
+    }
+}
+.font-medium { 
+    font-size: $font-medium; 
+    @media (max-width: $mobile-width){
+        font-size: $font-medium * 0.9;
+    }
+}
+.font-small { 
+    font-size: $font-small; 
+    @media (max-width: $mobile-width){
+        font-size: $font-small * 0.9;
+    }
+}
+.font-xs { 
+    font-size: $font-xs; 
+    @media (max-width: $mobile-width){
+        font-size: $font-xs * 0.9;
+    }
+}
+
+@font-face {
+    font-family: 'Replica-Bold';
+    src: url('/fonts/ReplicaStdBold');
+}

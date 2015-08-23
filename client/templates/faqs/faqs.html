@@ -1,4 +1,4 @@
-<template name="faq">
+<template name="faqs">
 
   {{#contentFor "headerButtonLeft"}}
     {{>ionNavBackButton class="button-positive" text=false}}
@@ -12,9 +12,11 @@
     {{#ionContent}}
       <p>Faq</p>
 
-        <button class="button button-block button-stable" data-action="showAlert">
-          Show Alert
-        </button>
+        <ul>
+        {{#each faqs}}
+           {{>faq}}
+        {{/each}}
+        </ul>
               
     {{/ionContent}}
   {{/ionView}}

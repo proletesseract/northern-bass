@@ -18,7 +18,7 @@ TimetableController = AppController.extend({});
 
 MapController = AppController.extend({});
 
-FaqController = AppController.extend({});
+FaqsController = AppController.extend({});
 
 LostController = AppController.extend({});
 

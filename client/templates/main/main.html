@@ -1,12 +1,10 @@
 <template name="main">
 
   {{#contentFor "headerButtonLeft"}}
-    
 
   {{/contentFor}}
 
   {{#contentFor "headerButtonRight"}}
-    
 
   {{/contentFor}}
 
@@ -16,7 +14,14 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <h4>Hello</h4>
+      <h4>Test</h4>
+            
+      <ul>
+        {{#each faqs}}
+           {{>faq}}
+        {{/each}}
+      </ul>
+      
     {{/ionContent}}
   {{/ionView}}
 

@@ -1,3 +1,3 @@
 Meteor.startup(function () {
-  AutoForm.setDefaultTemplate('ionic');
+  //AutoForm.setDefaultTemplate('ionic');
 });

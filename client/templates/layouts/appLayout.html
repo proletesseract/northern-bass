@@ -9,17 +9,17 @@
 
     {{#if isAndroid}}
       {{#ionTabs style="android"}}
-        {{> ionTab title="Menu 1" path="" icon="android-star"}}
-        {{> ionTab title="Menu 2" path="" icon="android-time"}}
-        {{> ionTab title="Menu 3" path="" icon="android-notifications"}}
-        {{> ionTab title="Menu 4" path="" icon="android-happy"}}
+        {{> ionTab title="Menu 1" path="timetable" icon="android-star"}}
+        {{> ionTab title="Menu 2" path="map" icon="android-time"}}
+        {{> ionTab title="Menu 3" path="faq" icon="android-notifications"}}
+        {{> ionTab title="Menu 4" path="vendors" icon="android-happy"}}
       {{/ionTabs}}
     {{else}}
       {{#ionTabs style="ios"}}
-        {{> ionTab title="Menu 1" path="" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
-        {{> ionTab title="Menu 2" path="" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
-        {{> ionTab title="Menu 3" path="" iconOff="ios-bell-outline" iconOn="ios-bell" class="tab-item-positive"}}
-        {{> ionTab title="Menu 4" path="" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-positive"}}
+        {{> ionTab title="Menu 1" path="timetable" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
+        {{> ionTab title="Menu 2" path="map" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
+        {{> ionTab title="Menu 3" path="faq" iconOff="ios-bell-outline" iconOn="ios-bell" class="tab-item-positive"}}
+        {{> ionTab title="Menu 4" path="vendors" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-positive"}}
       {{/ionTabs}}
     {{/if}}
   {{/ionBody}}

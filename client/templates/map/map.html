@@ -1,21 +1,21 @@
 <template name="map">
 
   {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton class="button-positive" text=false}}
+    {{>ionNavBackButton class="button" text=false}}
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Map</h1>
+    {{> menuButton}}    
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
-      <p>Map</p>
-
-        <button class="button button-block button-stable" data-action="showAlert">
-          Show Alert
-        </button>
-              
+      <div class="row">
+        <div class="col">
+          <p>Map</p>
+        </div>
+      </div>          
     {{/ionContent}}
   {{/ionView}}
 

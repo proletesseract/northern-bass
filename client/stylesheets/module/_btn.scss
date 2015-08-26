@@ -9,6 +9,19 @@ and open the template in the editor.
 */
 
 
+.btn-purple {
+  background: $black;
+  color: $purple;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &.selected {
+    background-color: $purple;
+  }
+}
+
 .btn-blue {
   background: $blue;
   color: $white;

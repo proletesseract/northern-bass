@@ -32,3 +32,27 @@ and open the template in the editor.
     -webkit-transform: $transformation; 
     transform: $transformation;
 }
+
+// Change Ionic's `default` colors to Northern Bass 15/16:
+//
+
+$base-background-color: #000;
+$base-color: #f9f9f9;
+
+$light:                         #1e1e1e !default;
+$stable:                        #f8f8f8 !default;
+$positive:                      $purple !default;
+$calm:                          #efefef !default;
+$balanced:                      #33cd5f !default;
+$energized:                     #ffc900 !default;
+$assertive:                     #ef473a !default;
+$royal:                         #886aea !default;
+$dark:                          #444 !default;
+
+$button-light-bg:                 $light !default;
+$button-light-text:               #C7C7C7 !default;
+$button-light-border:             #1f1f1f !default;
+$button-light-active-bg:          #fafafa !default;
+$button-light-active-border:      #ccc !default;
+
+$popup-background-color:          rgba(47,47,47,0.9) !default;

@@ -22,6 +22,13 @@ and open the template in the editor.
     }
 }
 
+.font-purple {
+    color:  $purple;
+    &:hover, &:active, &:visited, &:link {
+        color: $purple;
+    }
+}
+
 .font-blue { 
     color: $blue; 
     &:hover, &:active, &:visited, &:link {

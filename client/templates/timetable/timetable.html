@@ -1,21 +1,21 @@
 <template name="timetable">
 
   {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton class="button-positive" text=false}}
+    {{>ionNavBackButton class="button" text=false}}
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Timetable</h1>
+    {{> menuButton}}    
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
-      <p>Timetable</p>
-
-        <button class="button button-block button-stable" data-action="showAlert">
-          Show Alert
-        </button>
-              
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Timetable</p>
+        </div>
+      </div>  
     {{/ionContent}}
   {{/ionView}}
 

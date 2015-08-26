@@ -15,3 +15,4 @@ fourseven:scss@1.0.0
 iron:router
 bootstrap
 tsega:bootstrap3-datetimepicker
+zimme:active-route

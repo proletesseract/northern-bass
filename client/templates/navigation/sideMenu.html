@@ -1,0 +1,45 @@
+<template name="sideMenu">
+
+  <div class="bar bar-header bar-dark">
+    <h1 class="title">Main Menu</h1>
+  </div>
+  <div class="content has-header">
+    <div class="list">
+      <div data-ion-menu-close>
+
+      {{#ionList}}                
+        {{#ionItem}}
+          {{> ionIcon icon="ios-arrow-left"}} Close Menu
+        {{/ionItem}}
+
+        {{#ionItem id="home" path="main" iconLeft=true}}
+          {{> ionIcon icon="ios-home" class="calm"}} Home 
+        {{/ionItem}}        
+
+        {{#ionItem id="timetable" path="timetable" iconLeft=true}}
+          {{> ionIcon icon="ios-clock" class="calm"}} Timetable 
+        {{/ionItem}}
+
+        {{#ionItem id="map" path="map" iconLeft=true}}
+          {{> ionIcon icon="ios-location" class="calm"}} Map 
+        {{/ionItem}}
+
+        {{#ionItem id="faqs" path="faqs" iconLeft=true}}
+          {{> ionIcon icon="ios-help" class="calm"}} Faqs
+        {{/ionItem}}
+
+        {{#ionItem id="lost" path="lost" iconLeft=true}}
+          {{> ionIcon icon="ios-pricetag" class="calm"}} Lost Property 
+        {{/ionItem}}
+
+        {{#ionItem id="vendors" path="vendors" iconLeft=true}}
+          {{> ionIcon icon="ios-pint" class="calm"}} Food and Drinks 
+        {{/ionItem}}                                            
+
+      {{/ionList}}
+      </div>                
+
+    </div>
+  </div>
+
+</template>

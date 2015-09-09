@@ -16,3 +16,6 @@ iron:router
 bootstrap
 tsega:bootstrap3-datetimepicker
 houston:admin
+dburles:collection-helpers
+aldeed:simple-schema
+twbs:bootstrap

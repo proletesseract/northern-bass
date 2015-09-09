@@ -8,17 +8,36 @@
     <h1 class="title">Faq</h1>
   {{/contentFor}}
 
+  
+  
   {{#ionView}}
     {{#ionContent}}
-      <p>Faq</p>
+   
 
+    
         <ul>
-        {{#each faqs}}
-           {{>faq}}
-        {{/each}}
+         {{#each tasks}}
+            {{> task}}
+          {{/each}}
         </ul>
-              
     {{/ionContent}}
   {{/ionView}}
 
+</template>
+
+
+<template name="task">
+  <li>
+      <button class="btn btn-primary full-width" type="button" data-toggle="collapse" data-target="#{{_id._str}}">
+        {{title}}
+      </button>
+      
+      <div class="collapse" id="{{_id._str}}">
+        <div class="well">
+          <p>{{description}}</p>
+          <img src="{{image}}" />
+        </div>
+      </div>
+      
+  </li>
 </template>

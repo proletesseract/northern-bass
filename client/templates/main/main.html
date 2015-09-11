@@ -11,11 +11,107 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <div class="row">
-        <div class="col-xs-12">
-          <p>Home</p>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-xs-12">
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+              <div class="panel panel-home">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h3 class="panel-title">
+                      Currently Playing
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+
+              <div class="panel panel-home">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h3 class="panel-title">
+                      Timetable
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+
+              <div class="panel panel-home">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h3 class="panel-title">
+                      Festival Map
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+
+              <div class="panel panel-home">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                  
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h3 class="panel-title">
+                      Food & Drinks
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+
+              <div class="panel panel-home">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">                  
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <h3 class="panel-title">
+                      FAQ
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+
+              <div class="panel panel-home">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">                  
+                  <div class="panel-heading" role="tab" id="headingSix">
+                    <h3 class="panel-title">
+                      Lost Property
+                    </h3>
+                  </div>
+                </a>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+              
+            </div>
+
+          </div> 
         </div>
-      </div>  
+      </div>
     {{/ionContent}}
   {{/ionView}}
 

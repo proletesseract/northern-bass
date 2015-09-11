@@ -8,3 +8,22 @@ and open the template in the editor.
     Author     : craigmacgregor
 */
 
+.panel-home {
+}
+
+.panel-home .panel-heading {
+	background-color: $purple;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 7px;
+	padding-bottom: 1px;
+	margin-bottom: 2px;
+}
+
+.panel-home .panel-title a {
+	color: $white;
+}
+
+.panel-home .panel-body {
+	padding: 5px;
+}

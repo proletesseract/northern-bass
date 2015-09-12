@@ -31,5 +31,14 @@ and open the template in the editor.
 .home-logo {
 	background-image: url('images/home.bg.jpg');
 	background-position: top center;
-	
+	background-size: 100%;
+}
+
+.now-playing {
+	padding: 10px;
+}
+
+.stage-time {
+	text-align: center;
+	font-size: 1.4em;
 }

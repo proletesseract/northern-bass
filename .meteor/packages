@@ -4,15 +4,27 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
 autopublish
 insecure
-meteoric:ionic
-meteoric:autoform-ionic
-meteoric:ionicons-sass
-meteoric:ionic-sass
-fourseven:scss@1.0.0
 iron:router
+meteoric:ionic
 bootstrap
 tsega:bootstrap3-datetimepicker
 zimme:active-route
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+fourseven:scss@2.0.0
+meteoric:ionic-sass
+meteoric:ionicons-sass

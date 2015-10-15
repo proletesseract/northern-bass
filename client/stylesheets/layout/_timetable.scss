@@ -44,3 +44,31 @@ and open the template in the editor.
     color: #FFF !important;
     border: none;
 }
+
+.panel-artist {
+}
+
+.panel-artist .panel-heading {
+	background-color: $purple;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 7px;
+	padding-bottom: 1px;
+	margin-bottom: 2px;
+}
+
+.panel-artist .panel-title a {
+	color: $white;
+}
+
+.panel-artist .panel-body {
+	padding: 5px;
+}
+
+.artist-bio {
+
+}
+
+.artist-pic {
+	width: 100%;
+}

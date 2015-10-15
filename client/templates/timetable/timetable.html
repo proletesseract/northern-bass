@@ -35,7 +35,27 @@
             <!-- Tab panes -->
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="mainStage">
-                <p>MAIN</p>                
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                  <div class="panel panel-artist">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div class="panel-heading" role="tab" id="headingOne">
+
+                        <h3 class="panel-title artist">
+                          SKEPTA
+                        </h3>
+                      </div>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        {{> artistDropdown}}
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
 
               <div role="tabpanel" class="tab-pane" id="jungleStage">

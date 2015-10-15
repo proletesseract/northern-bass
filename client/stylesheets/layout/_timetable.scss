@@ -8,3 +8,39 @@ and open the template in the editor.
     Author     : craigmacgregor
 */
 
+#timetable.nav {
+	margin-bottom: 0px;
+}
+
+#timetable.nav-tabs{
+  background-color:#291c44;
+  border: none;
+}
+#timetable.tab-content{
+    background-color:#000;
+    color:#FFF;
+    padding:5px;
+}
+#timetable.nav-tabs > li > a{
+  border: none;
+  border-radius: 0px;
+  color:#FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+}
+#timetable.nav-tabs > li > a:hover{
+  background-color: #5e419b !important;
+    border: none;
+    border-radius: 0;
+    color:#FFF;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: #5e419b !important;
+    color: #FFF !important;
+    border: none;
+}

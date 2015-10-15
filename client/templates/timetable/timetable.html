@@ -5,17 +5,52 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">Timetable</h1>
+    <h1 class="title">TIMETABLE</h1>
     {{> menuButton}}    
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
-      <div class="row">
+
+
+      <div class="row no-gutters">
         <div class="col-xs-12">
-          <p>Timetable</p>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="timetable" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#mainStage" aria-controls="mainStage" role="tab" data-toggle="tab">MAIN STAGE</a>
+              </li>
+
+              <li role="presentation">
+                <a href="#jungleStage" aria-controls="jungleStage" role="tab" data-toggle="tab">JUNGLE STAGE</a>
+              </li>
+
+              <!--
+              <li role="presentation">
+                <a href="#thirdStage" aria-controls="thirdStage" role="tab" data-toggle="tab">THIRD STAGE</a>
+              </li>
+              -->              
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="mainStage">
+                <p>MAIN</p>                
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="jungleStage">
+                <p>JUNGLE</p>
+              </div>
+
+              <!--
+              <div role="tabpanel" class="tab-pane" id="thirdStage">
+                <p>THIRD</p>
+              </div>
+              -->              
+            </div>
+
+          </div>         
         </div>
-      </div>  
     {{/ionContent}}
   {{/ionView}}
 

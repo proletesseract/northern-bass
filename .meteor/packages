@@ -8,10 +8,10 @@ meteor-platform
 autopublish
 insecure
 meteoric:ionic
+fourseven:scss
 meteoric:autoform-ionic
 meteoric:ionicons-sass
 meteoric:ionic-sass
-fourseven:scss@1.0.0
 iron:router
 houston:admin
 less

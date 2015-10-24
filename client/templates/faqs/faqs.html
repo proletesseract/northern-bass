@@ -12,12 +12,9 @@
   
   {{#ionView}}
     {{#ionContent}}
-   
-
-    
         <ul>
-         {{#each tasks}}
-            {{> task}}
+         {{#each faqs}}
+            {{> faq}}
           {{/each}}
         </ul>
     {{/ionContent}}
@@ -26,18 +23,3 @@
 </template>
 
 
-<template name="task">
-  <li>
-      <button class="btn btn-primary full-width" type="button" data-toggle="collapse" data-target="#{{_id._str}}">
-        {{title}}
-      </button>
-      
-      <div class="collapse" id="{{_id._str}}">
-        <div class="well">
-          <p>{{description}}</p>
-          <img src="{{image}}" />
-        </div>
-      </div>
-      
-  </li>
-</template>

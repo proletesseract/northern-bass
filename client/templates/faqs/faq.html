@@ -1,7 +1,17 @@
 <template name="faq">
-  <li>
-      <h5>{{title}}</h5>
-      <p>{{description}}</p>
-      <img src="{{image}}" />
-  </li>
+
+    <li>
+        <button class="btn btn-primary full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
+            {{title}}
+        </button>
+
+        <div class="collapse" id="{{_id}}">
+            <div class="well">
+                <p>{{description}}</p>
+                <img src="{{image}}" />
+            </div>
+        </div>
+
+    </li>
+
 </template>

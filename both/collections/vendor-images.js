@@ -1,0 +1,1 @@
+VendorImages = new Mongo.Collection("vendor-images");

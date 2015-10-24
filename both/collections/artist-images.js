@@ -1,0 +1,1 @@
+ArtistImages = new Mongo.Collection("artist-images");

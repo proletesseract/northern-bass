@@ -28,7 +28,7 @@
   "appName": "northern-bass",
 
   // Location of app (local directory)
-  "app": "~/Projects/Meteor/nb-meteor/",
+  "app": "~/Projects/Meteor/northern-bass/",
 
   // Configure environment
   "env": {

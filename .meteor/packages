@@ -13,9 +13,6 @@ meteoric:ionicons-sass
 meteoric:ionic-sass
 fourseven:scss@1.0.0
 iron:router
-bootstrap
-tsega:bootstrap3-datetimepicker
 houston:admin
-dburles:collection-helpers
-aldeed:simple-schema
-twbs:bootstrap
+less
+nemo64:bootstrap

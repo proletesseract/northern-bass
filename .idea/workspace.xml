@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df408c39-8257-4e28-baf1-5d520aa5ac97" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/bootstrap/custom.bootstrap.less" afterPath="$PROJECT_DIR$/client/stylesheets/bootstrap/custom.bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/timetable/timeslot.html" afterPath="$PROJECT_DIR$/client/templates/timetable/timeslot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/layout/_admin.scss" afterPath="$PROJECT_DIR$/client/stylesheets/layout/_admin.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="northern-bass.iws" />
@@ -42,17 +39,17 @@
         <entry file="file://$PROJECT_DIR$/both/meteor-admin/meteor-admin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="packages" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <file leaf-file-name="_admin.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/layout/_admin.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.39772728">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -108,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.bootstrap.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.bootstrap.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/stylesheets/bootstrap/custom.bootstrap.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17045455">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="33" />
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -169,7 +166,6 @@
         <option value="$PROJECT_DIR$/both/collections/artists.js" />
         <option value="$PROJECT_DIR$/client/templates/faqs/faqs.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/app.scss" />
-        <option value="$PROJECT_DIR$/client/stylesheets/layout/_admin.scss" />
         <option value="$PROJECT_DIR$/both/collections/artist-images.js" />
         <option value="$PROJECT_DIR$/both/collections/time-slots.js" />
         <option value="$PROJECT_DIR$/client/templates/timetable/timetable.js" />
@@ -178,6 +174,7 @@
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/client/templates/timetable/timeslot.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/bootstrap/custom.bootstrap.json" />
+        <option value="$PROJECT_DIR$/client/stylesheets/layout/_admin.scss" />
       </list>
     </option>
   </component>
@@ -459,6 +456,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="northern-bass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="northern-bass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -866,12 +885,12 @@
       <updated>1444723837803</updated>
       <workItem from="1444723839078" duration="741000" />
       <workItem from="1445647930180" duration="7118000" />
-      <workItem from="1445817683512" duration="20205000" />
+      <workItem from="1445817683512" duration="20883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28064000" />
+    <option name="totallyTimeSpent" value="28742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="1177" extended-state="6" />
@@ -1163,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/layout/_admin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2556818">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028409092">
@@ -1227,22 +1238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/both/meteor-admin/meteor-admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/both/collections/time-slots.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1285,8 +1280,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/bootstrap/custom.bootstrap.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="33" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041666668">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/both/meteor-admin/meteor-admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/layout/_admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39772728">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>

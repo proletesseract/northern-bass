@@ -1,28 +1,31 @@
 <template name="lost">
 
   {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton class="button-positive" text=false}}
+    {{>ionNavBackButton class="button" text=false}}
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Lost</h1>
+    {{> menuButton}}    
   {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
-      <p>Lost</p>
       
       <div class="row">
-          <div class="col-xs-12">
+          <div class="col">
+              <p>Lost</p>
                 <div class="input-group datetimepicker">
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     <input class="set-due-date form-control" type="text"/>
+                    
+                    <!-- device default date selector? -->
+                    <input type="date">
+                    
                 </div>
           </div>
       </div>
-
-        
-              
+           
     {{/ionContent}}
   {{/ionView}}
 

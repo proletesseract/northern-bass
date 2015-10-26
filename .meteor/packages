@@ -6,6 +6,7 @@
 
 meteor-platform
 insecure
+iron:router
 meteoric:ionic
 fourseven:scss
 meteoric:autoform-ionic
@@ -21,3 +22,23 @@ accounts-password
 alanning:roles
 yogiben:admin
 autopublish
+bootstrap
+tsega:bootstrap3-datetimepicker
+zimme:active-route
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+fourseven:scss@2.0.0
+meteoric:ionic-sass
+meteoric:ionicons-sass

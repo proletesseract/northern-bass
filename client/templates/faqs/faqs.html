@@ -1,23 +1,31 @@
 <template name="faqs">
 
   {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton class="button-positive" text=false}}
+    {{>ionNavBackButton class="button" text=false}}
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
     <h1 class="title">Faq</h1>
+    {{> menuButton}}    
   {{/contentFor}}
 
   
   
   {{#ionView}}
     {{#ionContent}}
+      <div class="row">
+        <div class="col">
+          <p>Frequently Asked Questions</p>  
 
-        <ul>
-         {{#each faqs}}
-            {{> faq}}
+          <ul>
+          {{#each faqs}}
+             {{>faq}}
           {{/each}}
-        </ul>
+          </ul>
+
+        </div>
+      </div> 
+
     {{/ionContent}}
   {{/ionView}}
 

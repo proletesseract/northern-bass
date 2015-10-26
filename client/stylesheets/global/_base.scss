@@ -1,5 +1,5 @@
 html, body {
-    background-color: $white;
+    background-color: $black;
     color: $blue;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -76,4 +76,11 @@ textarea {
     max-width: $site-max;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }

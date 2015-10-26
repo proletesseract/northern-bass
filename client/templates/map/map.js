@@ -1,11 +1,6 @@
-Template.map.events({
+if (Meteor.isClient) {
+	Template.map.helpers({
 
-  'click [data-action="showAlert"]': function(event, template) {
-    IonPopup.alert({
-      title: 'An Alert',
-      template: 'Map',
-      okText: 'Got It.'
-    });
-  },
 
-});
+	});
+}

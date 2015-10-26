@@ -1,0 +1,26 @@
+#admin-delete-modal {
+  display: none;
+}
+
+.admin-layout {
+  input[type="text"],
+  textarea {
+    border: 1px solid #DDD;
+    padding: 10px;
+  }
+
+  input[type="search"] {
+    border: 1px solid #DDD;
+    height: 21px;
+    padding: 3px 10px 4px 10px;
+    + .input-group-btn {
+      left: 22px;
+
+    }
+  }
+
+  .btn .fa {
+    color: #FFF;
+  }
+
+}

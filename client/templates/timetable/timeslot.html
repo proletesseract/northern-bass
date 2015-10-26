@@ -1,0 +1,17 @@
+<template name="timeslot">
+
+    <li>
+        <button class="btn btn-primary full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
+            {{start.day}} {{start.month.full}} @ {{start.hours}}:{{start.minutes}} - {{end.hours}}:{{end.minutes}} {{artist.name}}
+        </button>
+
+        <div class="collapse" id="{{_id}}">
+            <div class="well">
+                <p>{{artist.description}}</p>
+                <img src="{{image.image}}" class="full-width" />
+            </div>
+        </div>
+
+    </li>
+
+</template>

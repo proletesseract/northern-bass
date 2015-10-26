@@ -10,12 +10,13 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <p>Timetable</p>
+      <ul>
+        {{#each stage1}}
+        {{> timeslot}}
+        {{/each}}
+      </ul>
 
-        <button class="button button-block button-stable" data-action="showAlert">
-          Show Alert
-        </button>
-              
+
     {{/ionContent}}
   {{/ionView}}
 

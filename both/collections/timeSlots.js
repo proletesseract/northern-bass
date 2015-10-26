@@ -1,1 +1,0 @@
-TimeSlots = new Mongo.Collection("time-slots");

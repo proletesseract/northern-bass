@@ -1,6 +1,6 @@
 Meteor.startup(function() {
   // Code used to prepopulate a database if needed.
-
+/*
   if (Faqs.find().count() === 0) {
     Faqs.insert({
       title: "Completely synergize resource",
@@ -30,6 +30,7 @@ Meteor.startup(function() {
   if (ArtistImages.find().count() === 0) {
     ArtistImages.insert({
       image: "images/artist-images/artist1.jpg",
+      caption: "Pakage DJing at Fu Bar",
       artistId: "ARTIST_ID"
     });
   }
@@ -50,9 +51,11 @@ Meteor.startup(function() {
   if (VendorImages.find().count() === 0) {
     VendorImages.insert({
       image: "images/vendor-images/vendor1.jpg",
+      caption: "Pakage DJing at Fu Bar",
       vendorId: "VENDOR_ID"
     });
   }
 
   return;
+  */
 });

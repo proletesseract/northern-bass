@@ -10,3 +10,14 @@ var id = Accounts.createUser({
 });
 
 Roles.addUsersToRoles(id, ['admin'], 'default-group');*/
+
+//add paul admin
+/*
+var id = Accounts.createUser({
+    email: "work@paulgrey.co.nz",
+    password: "paulgnz99",
+    profile: { name: "paul.grey" }
+});
+
+Roles.addUsersToRoles(id, ['admin'], 'default-group');
+*/

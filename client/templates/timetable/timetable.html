@@ -11,14 +11,8 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <ul>
-        {{#each stage1}}
-        {{> timeslot}}
-        {{/each}}
-      </ul>
 
-
-      <div class="row no-gutters">
+      <div class="row no-gutter">
         <div class="col-xs-12">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" id="timetable" role="tablist">
@@ -27,51 +21,43 @@
               </li>
 
               <li role="presentation">
-                <a href="#jungleStage" aria-controls="jungleStage" role="tab" data-toggle="tab">JUNGLE STAGE</a>
+                <a href="#jungleStage" aria-controls="jungleStage" role="tab" data-toggle="tab">JUNGLE</a>
               </li>
 
-              <!--
+              
               <li role="presentation">
-                <a href="#thirdStage" aria-controls="thirdStage" role="tab" data-toggle="tab">THIRD STAGE</a>
+                <a href="#thirdStage" aria-controls="thirdStage" role="tab" data-toggle="tab">OASIS</a>
               </li>
-              -->              
+                           
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
+
               <div role="tabpanel" class="tab-pane active" id="mainStage">
-
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-                  <div class="panel panel-artist">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <div class="panel-heading" role="tab" id="headingOne">
-
-                        <h3 class="panel-title artist">
-                          SKEPTA
-                        </h3>
-                      </div>
-                    </a>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-                        {{> artistDropdown}}
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
+                <ul>
+                  {{#each stage1}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
               </div>
 
               <div role="tabpanel" class="tab-pane" id="jungleStage">
-                <p>JUNGLE</p>
+                <ul>
+                  {{#each stage2}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
               </div>
 
-              <!--
               <div role="tabpanel" class="tab-pane" id="thirdStage">
-                <p>THIRD</p>
+                <ul>
+                  {{#each stage3}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
               </div>
-              -->              
+
             </div>
 
           </div>         

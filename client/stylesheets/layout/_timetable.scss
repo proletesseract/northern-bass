@@ -48,20 +48,16 @@ and open the template in the editor.
 .panel-artist {
 }
 
-.panel-artist .panel-heading {
+.panel-artist-heading {
 	background-color: $purple;
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 7px;
-	padding-bottom: 1px;
+	padding-bottom: 3px;
 	margin-bottom: 2px;
 }
 
-.panel-artist .panel-title a {
-	color: $white;
-}
-
-.panel-artist .panel-body {
+.panel-artist-body {
 	padding: 5px;
 }
 

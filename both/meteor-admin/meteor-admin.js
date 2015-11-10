@@ -4,7 +4,7 @@
 
 AdminConfig = {
     name: 'Northern Bass',
-    adminEmails: ['craig.b.macgregor@gmail.com'],
+    adminEmails: ['craig.b.macgregor@gmail.com','work@paulgrey.co.nz'],
     collections: {
         Artists: {
             tableColumns: [

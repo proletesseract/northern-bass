@@ -21,7 +21,11 @@ AdminConfig = {
                 { label: 'Image', name: 'image' },
             ]
         },
-        Faqs: {},
+        Faqs: {
+            tableColumns: [
+                { label: 'Title', name: 'title' }
+            ]
+        },
         TimeSlots: {
             tableColumns: [
                 { label: 'Start Date', name: 'startDate' },
@@ -29,13 +33,32 @@ AdminConfig = {
                 { label: 'End Date', name: 'endDate' },
                 { label: 'End Time', name: 'endTime' },
                 { label: 'Artist', name: function() {
-                    console.log(this);
                         return TimeSlots.findOne().artist().name;
                     }
                 }
             ]
         },
-        VendorImages: {},
-        Vendors: {}
+        VendorImages: {
+            tableColumns: [
+                { label: 'Vendor', name: function() {
+                    return VendorImages.findOne().vendor().name;
+                    }
+                },
+                { label: 'Image', name: 'image' },
+            ]
+        },
+        Vendors: {
+            tableColumns: [
+                { label: 'Name', name: 'name' },
+                { label: 'Type', name: function() {
+                        return Vendors.findOne().typeLabel();
+                    }
+                },
+                { label: 'Zone', name: function() {
+                    return Vendors.findOne().zoneLabel();
+                }
+                },
+            ]
+        }
     }
 };

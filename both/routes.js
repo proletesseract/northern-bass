@@ -25,3 +25,7 @@ Router.route('/lost', {
 Router.route('/vendors', {
   name: 'vendors'
 });
+
+Router.route('/login', {
+  name: 'login'
+});

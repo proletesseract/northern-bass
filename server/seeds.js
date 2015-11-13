@@ -1,6 +1,6 @@
 Meteor.startup(function() {
   // Code used to prepopulate a database if needed.
-/*
+
   if (Faqs.find().count() === 0) {
     Faqs.insert({
       title: "Completely synergize resource",
@@ -11,10 +11,12 @@ Meteor.startup(function() {
 
   if (TimeSlots.find().count() === 0) {
     TimeSlots.insert({
-      startTime: "31/12/2015 08:00",
-      endTime: "31/12/2015 010:00",
+      startDate: "2015-12-29",
+      endDate: "2015-12-29",
+      startTime: "08:00",
+      endTime: "010:00",
       artistId: "ARTIST_ID",
-      stageId: "1"
+      stage: 1
     });
   }
 
@@ -39,7 +41,8 @@ Meteor.startup(function() {
     Vendors.insert({
       name: "The Lucky Taco",
       description: "Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.",
-      zone: "Main Stage",
+      zone: 1,
+      type: 1,
       xCoord: 10,
       yCoord: 50,
       glutenFree: true,
@@ -57,5 +60,5 @@ Meteor.startup(function() {
   }
 
   return;
-  */
+
 });

@@ -2,22 +2,30 @@
  * Created by craigmacgregor on 26/10/15.
  */
 
-/*
-var id = Accounts.createUser({
-    email: "craig.b.macgregor@gmail.com",
-    password: "pakage29",
-    profile: { name: "craig.b.macgregor" }
-});
+if (Meteor.isServer) {
 
-Roles.addUsersToRoles(id, ['admin'], 'default-group');*/
+    if (!Accounts.findUserByEmail("craig.b.macgregor@gmail.com")) {
 
-//add paul admin
-/*
-var id = Accounts.createUser({
-    email: "work@paulgrey.co.nz",
-    password: "paulgnz99",
-    profile: { name: "paul.grey" }
-});
+        var id = Accounts.createUser({
+            email: "craig.b.macgregor@gmail.com",
+            password: "pakage29",
+            profile: {name: "craig.b.macgregor"}
+        });
 
-Roles.addUsersToRoles(id, ['admin'], 'default-group');
-*/
+        Roles.addUsersToRoles(id, ['admin'], Roles.GLOBAL_GROUP);
+
+    }
+
+    if (!Accounts.findUserByEmail("work@paulgrey.co.nz")) {
+
+        var id2 = Accounts.createUser({
+            email: "work@paulgrey.co.nz",
+            password: "paulg99",
+            profile: {name: "paul.grey"}
+        });
+
+        Roles.addUsersToRoles(id2, ['admin'], Roles.GLOBAL_GROUP);
+
+    }
+
+}

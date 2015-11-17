@@ -1,13 +1,21 @@
 <template name="timeslot">
   <li class="panel-artist">
     <button class="panel-artist-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
-        {{start.day}} {{start.month.full}} @ {{start.hours}}:{{start.minutes}} - {{end.hours}}:{{end.minutes}} {{artist.name}}
+        {{start.hours}}:{{start.minutes}} - {{end.hours}}:{{end.minutes}} | {{start.day}} {{start.month.full}} <h4>{{artist.name}}</h4>
     </button>
 
     <div class="collapse" id="{{_id}}">
         <div class="panel-artist-body">
-            <p class="font-white">{{artist.description}}</p>
-            <img src="{{image.image}}" class="full-width" />
+            <div class="col-xs-3 col-md-3 no-padding">
+
+                <img src="{{image.image}}" class="artist-profile-image" />
+
+            </div>
+            <div class="col-xs-9 col-md-9 no-padding">
+
+                <p class="artist-profile-description">{{artist.description}}</p>
+
+            </div>
         </div>
     </div>
   </li>

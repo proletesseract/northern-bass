@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 #timetable.nav {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #timetable.nav-tabs{
@@ -49,22 +49,24 @@ and open the template in the editor.
 }
 
 .panel-artist-heading {
-	background-color: $purple;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 7px;
-	padding-bottom: 3px;
-	margin-bottom: 2px;
+  background-color: $purple;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-left: 7px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 .panel-artist-body {
-	padding: 5px;
+  padding: 5px;
 }
 
-.artist-bio {
-
+.artist-profie-description {
+  display: inline-block;
 }
 
-.artist-pic {
-	width: 100%;
+.artist-profile-image {
+  float: left;
+  display: inline-block;
+  padding: 5px;
 }

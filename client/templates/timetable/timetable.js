@@ -55,3 +55,15 @@ function formatDate(date) {
 
 }
 
+Template.timeslot.events({
+    'click #artistFavourite':function(event,template) {
+        var state = MyCollection.findOne({}).state
+        MyCollection.update({}, {$set:{state:!state}});
+    }
+});
+
+Template.timeslot.helpers({
+    item:function() {
+        return MyCollection.findOne({});
+    }
+});

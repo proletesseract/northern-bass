@@ -6,14 +6,20 @@
 
     <div class="collapse" id="{{_id}}">
         <div class="panel-artist-body">
-            <div class="col-xs-3 col-md-3 no-padding">
+            <div class="col-xs-4 col-md-4 no-padding">
 
                 <img src="{{image.image}}" class="artist-profile-image" />
 
             </div>
-            <div class="col-xs-9 col-md-9 no-padding">
+            <div class="col-xs-8 col-md-10 no-padding">
 
                 <p class="artist-profile-description">{{artist.description}}</p>
+
+                <a id="artistInfo" class="button button-icon icon ion-information-circled"></a>
+
+                <a id="artistFavourite" class="button button-icon icon ion-android-favorite"></a>
+
+                <a id="artistSoundCloud" class="button button-icon icon ion-android-cloud"></a>
 
             </div>
         </div>

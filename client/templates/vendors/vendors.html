@@ -9,13 +9,23 @@
     {{> menuButton}}    
   {{/contentFor}}
 
+  
+
   {{#ionView}}
     {{#ionContent}}
       <div class="row">
         <div class="col">
           <p>Vendors</p>
+
+          <ul>
+          {{#each vendors}}
+            {{>vendor}}
+          {{/vendors}}
+          </ul>
+
         </div>
-      </div>  
+      </div>
+
     {{/ionContent}}
   {{/ionView}}
 

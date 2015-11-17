@@ -4,7 +4,69 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 23/08/2015, 5:18:57 PM
+    Created on : 23/08/2015, 5:18:51 PM
     Author     : craigmacgregor
 */
 
+#vendor.nav {
+  margin-bottom: 0px;
+}
+
+#vendor.nav-tabs{
+  background-color:#291c44;
+  border: none;
+}
+#vendor.tab-content{
+    background-color:#000;
+    color:#FFF;
+    padding:5px;
+}
+#vendor.nav-tabs > li > a{
+  border: none;
+  border-radius: 0px;
+  color:#FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+}
+#vendor.nav-tabs > li > a:hover{
+  background-color: #5e419b !important;
+    border: none;
+    border-radius: 0;
+    color:#FFF;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: #5e419b !important;
+    color: #FFF !important;
+    border: none;
+}
+
+.panel-vendor {
+}
+
+.panel-vendor-heading {
+  background-color: $purple;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-left: 7px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.panel-vendor-body {
+  padding: 5px;
+}
+
+.vendor-description {
+  display: inline-block;
+}
+
+.vendor-image {
+  float: left;
+  display: inline-block;
+  padding: 5px;
+}

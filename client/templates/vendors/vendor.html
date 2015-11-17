@@ -1,0 +1,17 @@
+<template name="vendor">
+
+    <li class="panel-vendor">
+        <button class="panel-vendor-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
+            {{title}}
+        </button>
+
+        <div class="collapse" id="{{_id}}">
+            <div class="panel-vendor-body">
+                <p class="vendor-description">{{description}}</p>
+                <img class="vendor-image" src="{{image}}" />
+            </div>
+        </div>
+
+    </li>
+
+</template>

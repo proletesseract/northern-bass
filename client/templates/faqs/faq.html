@@ -1,14 +1,14 @@
 <template name="faq">
 
-    <li>
-        <button class="btn btn-primary full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
+    <li class="panel-faq">
+        <button class="panel-faq-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
             {{title}}
         </button>
 
         <div class="collapse" id="{{_id}}">
-            <div class="well">
-                <p>{{description}}</p>
-                <img src="{{image}}" />
+            <div class="panel-faq-body">
+                <p class="faq-description">{{description}}</p>
+                <img class="faq-image" src="{{image}}" />
             </div>
         </div>
 

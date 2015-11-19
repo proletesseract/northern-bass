@@ -5,7 +5,7 @@
   {{/contentFor}}
 
   {{#contentFor "headerTitle"}}
-    <h1 class="title">HOME</h1>
+    <h1 id="navTitle" class="title">HOME</h1>
     {{> menuButton}}
   {{/contentFor}}
 
@@ -36,78 +36,23 @@
               </div>
 
               <div class="panel-home-heading">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="panel-title" role="tab" id="headingTwo">
-                    <h3>
-                      Timetable
-                    </h3>
-                  </div>
-                </a>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
+                <a href="{{ pathFor 'timetable' }}"><h3>Timetable</h3></a>
+              </div>              
+
+              <div class="panel-home-heading">
+                <a href="{{ pathFor 'map' }}"><h3>Festival Map</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <div class="panel-title" role="tab" id="headingThree">
-                    <h3>
-                      Festival Map
-                    </h3>
-                  </div>
-                </a>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
+                <a href="{{ pathFor 'vendors' }}"><h3>Vendors</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                  
-                  <div class="panel-title" role="tab" id="headingFour">
-                    <h3>
-                      Food & Drinks
-                    </h3>
-                  </div>
-                </a>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
+                <a href="{{ pathFor 'faqs' }}"><h3>FAQS</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">                  
-                  <div class="panel-title" role="tab" id="headingFive">
-                    <h3>
-                      FAQ
-                    </h3>
-                  </div>
-                </a>
-                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
-              </div>
-
-              <div class="panel-home-heading">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">                  
-                  <div class="panel-title" role="tab" id="headingSix">
-                    <h3>
-                      Lost Property
-                    </h3>
-                  </div>
-                </a>
-                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
+                <a href="{{ pathFor 'lost' }}"><h3>Lost</h3></a>
               </div>
               
             </div>

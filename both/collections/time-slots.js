@@ -2,7 +2,41 @@ TimeSlots = new Mongo.Collection("time-slots");
 
 TimeSlots.helpers({
     artist: function() {
-        return Artists.findOne({_id: this.artistId});
+        console.log(this);
+        var artist = Artists.findOne(this.artistId);
+        if(artist){
+            return artist.name;
+        } else {
+            return "(undefined)";
+        }
+    },
+    startTime: function() {
+        var returnTime;
+        if(this.startHour < 10) {
+            returnTime = "0"+this.startHour;
+        } else {
+            returnTime = this.startHour;
+        }
+        if(this.startMinute == 0) {
+            returnTime += ":0" + this.startMinute;
+        } else {
+            returnTime += ":" + this.startMinute;
+        }
+        return returnTime;
+    },
+    endTime: function() {
+        var returnTime;
+        if(this.endHour < 10) {
+            returnTime = "0"+this.endHour;
+        } else {
+            returnTime = this.endHour;
+        }
+        if(this.endMinute == 0) {
+            returnTime += ":0" + this.endMinute;
+        } else {
+            returnTime += ":" + this.endMinute;
+        }
+        return returnTime;
     }
 });
 
@@ -15,32 +49,38 @@ var dates = [
     { label: '01 January', value: '2016-01-01' },
 ];
 
-var times = [
-    { label: '00:00 am', value: '00:00:00' },
-    { label: '01:00 am', value: '01:00:00' },
-    { label: '02:00 am', value: '02:00:00' },
-    { label: '03:00 am', value: '03:00:00' },
-    { label: '04:00 am', value: '04:00:00' },
-    { label: '05:00 am', value: '05:00:00' },
-    { label: '06:00 am', value: '06:00:00' },
-    { label: '07:00 am', value: '07:00:00' },
-    { label: '08:00 am', value: '08:00:00' },
-    { label: '09:00 am', value: '09:00:00' },
-    { label: '10:00 am', value: '10:00:00' },
-    { label: '11:00 am', value: '11:00:00' },
-    { label: '12:00 pm', value: '12:00:00' },
-    { label: '01:00 pm', value: '13:00:00' },
-    { label: '02:00 pm', value: '14:00:00' },
-    { label: '03:00 pm', value: '15:00:00' },
-    { label: '04:00 pm', value: '16:00:00' },
-    { label: '05:00 pm', value: '17:00:00' },
-    { label: '06:00 pm', value: '18:00:00' },
-    { label: '07:00 pm', value: '19:00:00' },
-    { label: '08:00 pm', value: '20:00:00' },
-    { label: '09:00 pm', value: '21:00:00' },
-    { label: '10:00 pm', value: '22:00:00' },
-    { label: '11:00 pm', value: '23:00:00' },
+var hours = [
+    { label: '00', value: '0' },
+    { label: '01', value: '1' },
+    { label: '02', value: '2' },
+    { label: '03', value: '3' },
+    { label: '04', value: '4' },
+    { label: '05', value: '5' },
+    { label: '06', value: '6' },
+    { label: '07', value: '7' },
+    { label: '08', value: '8' },
+    { label: '09', value: '9' },
+    { label: '10', value: '10' },
+    { label: '11', value: '11' },
+    { label: '12', value: '12' },
+    { label: '01', value: '13' },
+    { label: '02', value: '14' },
+    { label: '03', value: '15' },
+    { label: '04', value: '16' },
+    { label: '05', value: '17' },
+    { label: '06', value: '18' },
+    { label: '07', value: '19' },
+    { label: '08', value: '20' },
+    { label: '09', value: '21' },
+    { label: '10', value: '22' },
+    { label: '11', value: '23' },
+];
 
+var minutes = [
+    { label: '00', value: '0' },
+    { label: '15', value: '15' },
+    { label: '30', value: '30' },
+    { label: '45', value: '45' },
 ];
 
 Schemas.TimeSlot = new SimpleSchema({
@@ -53,12 +93,21 @@ Schemas.TimeSlot = new SimpleSchema({
             }
         }
     },
-    startTime: {
+    startHour: {
         type: String,
-        label: 'Start Time',
+        label: 'Start Hour',
         autoform: {
             options: function() {
-                return times;
+                return hours;
+            }
+        }
+    },
+    startMinute: {
+        type: String,
+        label: 'Start Minute',
+        autoform: {
+            options: function() {
+                return minutes;
             }
         }
     },
@@ -71,12 +120,21 @@ Schemas.TimeSlot = new SimpleSchema({
             }
         }
     },
-    endTime: {
+    endHour: {
         type: String,
-        label: 'End Time',
+        label: 'End Hour',
         autoform: {
             options: function() {
-                return times;
+                return hours;
+            }
+        }
+    },
+    endMinute: {
+        type: String,
+        label: 'End Minute',
+        autoform: {
+            options: function() {
+                return minutes;
             }
         }
     },

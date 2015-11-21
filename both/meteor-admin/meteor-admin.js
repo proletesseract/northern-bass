@@ -14,8 +14,9 @@ AdminConfig = {
         },
         ArtistImages: {
             tableColumns: [
+                { label: 'ArtistId', name: 'artistId' },
                 { label: 'Artist', name: function() {
-                        return ArtistImages.findOne().artist().name;
+                        return ArtistImages.findOne().artist();
                     }
                 },
                 { label: 'Image', name: 'image' },
@@ -29,11 +30,16 @@ AdminConfig = {
         TimeSlots: {
             tableColumns: [
                 { label: 'Start Date', name: 'startDate' },
-                { label: 'Start Time', name: 'startTime' },
-                { label: 'End Date', name: 'endDate' },
-                { label: 'End Time', name: 'endTime' },
+                { label: 'Start Time', name: function() {
+                        return TimeSlots.findOne({_id: ''}).startTime();
+                    }
+                },
+                { label: 'End Time', name: function() {
+                        return TimeSlots.findOne().endTime();
+                    }
+                },
                 { label: 'Artist', name: function() {
-                        return TimeSlots.findOne().artist().name;
+                        return TimeSlots.findOne().artist();
                     }
                 }
             ]
@@ -41,7 +47,7 @@ AdminConfig = {
         VendorImages: {
             tableColumns: [
                 { label: 'Vendor', name: function() {
-                    return VendorImages.findOne().vendor().name;
+                        return VendorImages.findOne().vendor();
                     }
                 },
                 { label: 'Image', name: 'image' },

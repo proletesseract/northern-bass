@@ -2,7 +2,12 @@ ArtistImages = new Mongo.Collection("artist-images");
 
 ArtistImages.helpers({
     artist: function() {
-        return Artists.findOne({_id: this.artistId});
+        var artist = Artists.findOne(this.artistId);
+        if(artist){
+            return artist.name;
+        } else {
+            return "(undefined)";
+        }
     }
 });
 
@@ -20,7 +25,6 @@ Schemas.ArtistImages = new SimpleSchema({
                         value: artist._id
                     };
                 });
-
             }
         }
     },

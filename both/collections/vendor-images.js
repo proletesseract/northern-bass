@@ -2,7 +2,12 @@ VendorImages = new Mongo.Collection("vendor-images");
 
 VendorImages.helpers({
     vendor: function() {
-        return Vendors.findOne({_id: this.vendorId});
+        var vendor = Vendors.findOne(this.vendorId);
+        if(vendor){
+            return vendor.name;
+        } else {
+            return "(undefined)";
+        }
     }
 });
 

@@ -13,8 +13,10 @@ Meteor.startup(function() {
     TimeSlots.insert({
       startDate: "2015-12-29",
       endDate: "2015-12-29",
-      startTime: "08:00",
-      endTime: "010:00",
+      startHour: '8',
+      startMinute: '15',
+      endHour: '9',
+      endMinute: '0',
       artistId: "ARTIST_ID",
       stage: 1
     });

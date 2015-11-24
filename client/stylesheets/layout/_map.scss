@@ -13,3 +13,9 @@ and open the template in the editor.
   max-width: 100%;
   height: 500px;
 }
+
+#map-canvas{
+	position: fixed!important;
+	height:100%;
+	width:100%;
+}

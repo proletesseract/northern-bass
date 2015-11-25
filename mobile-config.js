@@ -1,3 +1,17 @@
+App.info({
+  id: 'nz.northernbass',
+  name: 'Northern Bass',
+  description: 'Get the Official Northern Bass app for 2015/16',
+  author: 'FUZEN Entertainment',
+  email: 'work@paulgrey.co.nz',
+  website: 'http://northernbass.co.nz',
+  version: '0.1.5.0'
+});
+
+App.accessRule('*.google.com/*');
+App.accessRule('*.googleapis.com/*');
+App.accessRule('*.gstatic.com/*');
+
 // Set up resources such as icons and launch screens.
 /*
 App.info({
@@ -8,16 +22,17 @@ email: 'work@paulgrey.co.nz',
 version: '1.5.0'
 });
 
-App.icons({
   "iphone": "resources/icons/iphone.png", // 60x60
   "iphone_2x": "resources/icons/iphone_2x.png", // 120x120
   "iphone_3x": "resources/icons/iphone_3x.png", // 180x180
   "ipad": "resources/icons/ipad.png", // 76x76
   "ipad_2x": "resources/icons/ipad_2x.png", // 152x152
-  'android_ldpi': "resources/icons/android_ldpi.png", // 36x36
-  'android_mdpi': "resources/icons/icon_mdpi.png", // 48x48
-  'android_hdpi': "resources/icons/icon_hdpi.png", // 72x72
-  'android_xhdpi': "resources/icons/icon_xhdpi.png" // 96x96
+*/    
+App.icons({
+  'android_ldpi': "resources/android_ldpi.icon.png", // 36x36
+  'android_mdpi': "resources/android_mdpi.icon.png", // 48x48
+  'android_hdpi': "resources/android_hdpi.icon.png", // 72x72
+  'android_xhdpi': "resources/android_xhdpi.icon.png" // 96x96
 });
 
 App.launchScreens({
@@ -40,4 +55,6 @@ App.launchScreens({
   "android_xhdpi_portrait": "resources/splashes/android_xhdpi_portrait.png",
   "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png"
 });
-*/
+
+App.setPreference('StatusBarOverlaysWebView', true);
+App.setPreference('StatusBarStyle', 'default');

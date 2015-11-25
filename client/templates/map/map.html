@@ -11,11 +11,39 @@
 
   {{#ionView}}
     {{#ionContent}}
-      <div class="row">
-        <div class="col">
-          <p>Map</p>
-        </div>
-      </div>          
+
+      <div class="row no-gutter">
+        <div class="col-xs-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="map" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#routeMap" aria-controls="routeMap" role="tab" data-toggle="tab">Directions</a>
+              </li>
+
+              <li role="presentation">
+                <a href="#festivalMap" aria-controls="festivalMap" role="tab" data-toggle="tab">Festival Map</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+              <div role="tabpanel" class="tab-pane active" id="routeMap">
+                <ul>
+                  {{> routeMap}}
+                </ul>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="festivalMap">
+                <ul>
+                  {{> festivalMap}}
+                </ul>
+              </div>
+
+            </div>
+
+          </div>         
+        </div>        
     {{/ionContent}}
   {{/ionView}}
 

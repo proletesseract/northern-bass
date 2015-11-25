@@ -3,11 +3,19 @@
 
     {{#ionSideMenuContainer}}
 
-      {{#ionSideMenu side="right"}}
-        {{> sideMenu}}
-      {{/ionSideMenu}}
+      {{#ionSideMenus}}
 
-      {{#ionSideMenuContent}}
+        {{#ionSideMenu}}
+
+        {{/ionSideMenu}}
+
+        {{#ionSideMenu side="right"}}
+          {{> sideMenu}}
+        {{/ionSideMenu}}
+
+      {{/ionSideMenus}}        
+
+        {{#ionSideMenuContent}}
 
         {{> ionNavBar class="bar-positive"}}
 

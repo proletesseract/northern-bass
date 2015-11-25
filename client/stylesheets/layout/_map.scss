@@ -8,6 +8,36 @@ and open the template in the editor.
     Author     : craigmacgregor
 */
 
+#map.nav {
+  margin-bottom: 0px;
+}
+
+#map.nav-tabs{
+  background-color:#291c44;
+  border: none;
+}
+#map.tab-content{
+    background-color:#000;
+    color:#FFF;
+    padding:5px;
+}
+#map.nav-tabs > li > a{
+  border: none;
+  border-radius: 0px;
+  color:#FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+}
+#map.nav-tabs > li > a:hover{
+  background-color: #5e419b !important;
+    border: none;
+    border-radius: 0;
+    color:#FFF;
+}
+
 .map-container {
   width: 800px;
   max-width: 100%;

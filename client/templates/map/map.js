@@ -18,7 +18,7 @@ Template.routeMap.onRendered(function(){
 	initMap();
 })
 
-initMap = function(){
+/*initMap = function(){
     var map;
       var mapOptions = {
         zoom: 8,
@@ -26,4 +26,24 @@ initMap = function(){
       };
       map = new google.maps.Map(document.getElementById('map-canvas'),
   mapOptions);
+}
+*/
+
+initMap = function(){
+
+    var map = $("#map-canvas");
+      var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-36.1620727, 174.4867605),
+        styles: [{
+          stylers: [
+            { lightness: 0 },
+            { saturation: 10 },
+            { hue: "#5E419B"}
+          ]
+        }]
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+  mapOptions);
+
 }

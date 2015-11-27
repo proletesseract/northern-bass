@@ -5,7 +5,7 @@ App.info({
   author: 'FUZEN Entertainment',
   email: 'work@paulgrey.co.nz',
   website: 'http://northernbass.co.nz',
-  version: '0.1.5.0'
+  version: '0.1.5'
 });
 
 App.accessRule('*.google.com/*');

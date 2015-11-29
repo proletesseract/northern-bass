@@ -8,11 +8,6 @@ and open the template in the editor.
     Author     : craigmacgregor
 */
 
-.home-slider {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
 .panel-home {
 }
 
@@ -39,6 +34,7 @@ and open the template in the editor.
 	background-image: url('images/home.bg.jpg');
 	background-position: top center;
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .now-playing {
@@ -49,4 +45,18 @@ and open the template in the editor.
 .stage-time {
 	text-align: center;
 	font-size: 1em;
+}
+
+#carousel {
+  border: none;
+  width: 100%;
+  position: relaitve;
+}
+
+#carousel div {
+  width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: silver;
 }

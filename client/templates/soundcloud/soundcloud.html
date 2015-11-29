@@ -1,0 +1,28 @@
+<template name="soundcloud">
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton class="button" text=false}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 id="navTitle" class="title">SoundCloud Playlist</h1>
+    {{> menuButton}}    
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+      <div class="row no-gutter">
+        <div class="col-xs-12">
+          <div id="soundcloudPlayer"></div>
+
+          <div class="panel-home-heading">
+            <a href="https://soundcloud.com/northernbass" target="_blank"><h3>Open SoundCloud</h3></a>
+          </div>
+              
+        </div>         
+    	</div>        
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>

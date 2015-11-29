@@ -24,3 +24,5 @@ LostController = AppController.extend({});
 
 VendorsController = AppController.extend({});
 
+SoundcloudController = AppController.extend({});
+

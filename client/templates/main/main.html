@@ -10,12 +10,13 @@
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col-xs-12">
-            <div class="home-logo">
-              <img src="images/home.logo.png">
+            <div class="home-slider">
+              <img class="home-logo" src="images/home.logo.png">
             </div>
 
             <div class="panel-home-group" id="accordion" role="tablist" aria-multiselectable="true">
 
+              <!--
               <div class="panel-home-heading">
                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <div class="panel-title" role="tab" id="headingOne">
@@ -30,25 +31,26 @@
                   </div>
                 </div>
               </div>
+              -->
 
               <div class="panel-home-heading">
-                <a href="{{ pathFor 'timetable' }}"><h3>Timetable</h3></a>
+                <a class="panel-title" href="{{ pathFor 'timetable' }}"><h3>Timetable</h3></a>
               </div>              
 
               <div class="panel-home-heading">
-                <a href="{{ pathFor 'map' }}"><h3>Festival Map</h3></a>
+                <a class="panel-title" href="{{ pathFor 'map' }}"><h3>Festival Map</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a href="{{ pathFor 'vendors' }}"><h3>Vendors</h3></a>
+                <a class="panel-title" href="{{ pathFor 'vendors' }}"><h3>Vendors</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a href="{{ pathFor 'faqs' }}"><h3>FAQS</h3></a>
+                <a class="panel-title" href="{{ pathFor 'faqs' }}"><h3>FAQS</h3></a>
               </div>
 
               <div class="panel-home-heading">
-                <a href="{{ pathFor 'lost' }}"><h3>Lost</h3></a>
+                <a class="panel-title" href="{{ pathFor 'lost' }}"><h3>Lost</h3></a>
               </div>
               
             </div>

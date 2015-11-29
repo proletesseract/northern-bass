@@ -5,13 +5,14 @@
   background-color: $purple;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 1px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   margin-bottom: 2px;
 }
 
-.panel-soundcloud-heading .panel-title a {
+.panel-soundcloud-heading .panel-title a > h3 {
   color: $white;
+  font-size: 1em;
 }
 
 .panel-soundcloud-heading .panel-body {

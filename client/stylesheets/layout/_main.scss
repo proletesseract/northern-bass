@@ -15,13 +15,14 @@ and open the template in the editor.
 	background-color: $purple;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 7px;
-	padding-bottom: 1px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 	margin-bottom: 2px;
 }
 
-.panel-home-heading .panel-title a {
+.panel-home-heading a.panel-title > h3 {
 	color: $white;
+	font-size: 1em;
 }
 
 .panel-home-heading .panel-body {

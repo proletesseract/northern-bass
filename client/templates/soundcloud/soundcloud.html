@@ -1,0 +1,23 @@
+<template name="soundcloud">
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton class="button" text=false}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 id="navTitle" class="title">Soundcloud Test</h1>
+    {{> menuButton}}    
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+      <div class="row no-gutter">
+        <div class="col-xs-12">
+          <div id="soundcloudPlayer"></div>
+        </div>         
+    	</div>        
+    {{/ionContent}}
+  {{/ionView}}
+
+</template>

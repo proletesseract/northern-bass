@@ -5,12 +5,14 @@ App.info({
   author: 'FUZEN Entertainment',
   email: 'work@paulgrey.co.nz',
   website: 'http://northernbass.co.nz',
-  version: '0.1.5'
+  version: '0.1.5.0'
 });
 
 App.accessRule('*.google.com/*');
 App.accessRule('*.googleapis.com/*');
 App.accessRule('*.gstatic.com/*');
+App.accessRule('*.soundcloud.com/*');
+App.accessRule('*.sndcdn.com/*');
 
 // Set up resources such as icons and launch screens.
 /*

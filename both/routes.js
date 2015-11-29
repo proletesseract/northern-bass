@@ -29,3 +29,7 @@ Router.route('/vendors', {
 Router.route('/login', {
   name: 'login'
 });
+
+Router.route('/soundcloud', {
+	name: 'soundcloud'
+});

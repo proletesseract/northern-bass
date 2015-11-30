@@ -12,6 +12,13 @@ if (Meteor.isClient) {
       return getTimeSlotInfo(3);
     }
   });
+
+  Template.timeslot.events = {
+    'click .button' : function(e){
+      var win = window.open(this.link, '_blank');
+      win.focus();
+    }
+  };
 }
 
 function getTimeSlotInfo(stage) {

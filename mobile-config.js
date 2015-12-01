@@ -13,23 +13,11 @@ App.accessRule('*.googleapis.com/*');
 App.accessRule('*.gstatic.com/*');
 App.accessRule('*.soundcloud.com/*');
 App.accessRule('*.sndcdn.com/*');
-
-// Set up resources such as icons and launch screens.
-/*
-App.info({
-name: 'northern-bass',
-description: 'Northern Bass 2015/16',
-author: 'paul and craig',
-email: 'work@paulgrey.co.nz',
-version: '1.5.0'
-});
-
-  "iphone": "resources/icons/iphone.png", // 60x60
-  "iphone_2x": "resources/icons/iphone_2x.png", // 120x120
-  "iphone_3x": "resources/icons/iphone_3x.png", // 180x180
-  "ipad": "resources/icons/ipad.png", // 76x76
-  "ipad_2x": "resources/icons/ipad_2x.png", // 152x152
-*/    
+App.accessRule('northernbassapp.uppercase8.com/*');
+App.accessRule('*');
+App.accessRule('meteor.local/*');
+App.accessRule('*.northernbass.co.nz/*');
+   
 App.icons({
   'android_ldpi': "resources/android_ldpi.icon.png", // 36x36
   'android_mdpi': "resources/android_mdpi.icon.png", // 48x48

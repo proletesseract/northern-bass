@@ -61,6 +61,21 @@ Meteor.startup(function() {
     });
   }
 
+  if (LostProperty.find().count() === 0) {
+    LostProperty.insert({
+      item: "Iphone 6",
+      description: "Black with a photo of a rabbit on the lock screen",
+      image: "image1.jpg",
+      location: "Somewhere near stage 1",
+      date: "2015-12-30",
+      time: "01:15:00",
+      phoneNumber: "02102246643",
+      name: "Craig MacGregor",
+      email: "craig.b.macgregor@gmail.com",
+      userId: "1234567890"
+    });
+  }
+
   return;
 
 });

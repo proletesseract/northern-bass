@@ -65,6 +65,14 @@ AdminConfig = {
                 }
                 },
             ]
+        },
+        LostProperty: {
+            tableColumns: [
+                { label: 'Item', name: 'item' },
+                { label: 'Name', name: 'name' },
+                { label: 'Email', name: 'email' },
+                { label: 'Phone Number', name: 'phoneNumber' }
+            ]
         }
     }
 };

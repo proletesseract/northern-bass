@@ -26,8 +26,11 @@ function getTimeSlotInfo(stage) {
 
 function timeSlotsFormatter (timeSlot) {
 
-  var startDate = new Date(timeSlot.startDate + ' ' + timeSlot.startTime());
-  var endDate = new Date(timeSlot.endDate + ' ' + timeSlot.endTime());
+  var startDateString = timeSlot.startDate + 'T' + timeSlot.startTime() + ':00';
+  var startDate = new Date(startDateString);
+
+  var endDateString = timeSlot.endDate + 'T' + timeSlot.endTime() + ':00';
+  var endDate = new Date(endDateString);
 
   var formattedTimeSlot = {
     _id: timeSlot._id,

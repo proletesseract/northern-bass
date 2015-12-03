@@ -29,12 +29,12 @@ AdminConfig = {
         TimeSlots: {
             tableColumns: [
                 { label: 'Start Date', name: 'startDate' },
-                { label: 'Start Time', name: function() {
-                        return TimeSlots.findOne().startTime();
+                { label: 'Start Time', name: function(doc) {
+                        return TimeSlots.findOne({_id: doc._id}).startTime();
                     }
                 },
-                { label: 'End Time', name: function() {
-                        return TimeSlots.findOne().endTime();
+                { label: 'End Time', name: function(doc) {
+                        return TimeSlots.findOne({_id: doc._id}).endTime();
                     }
                 },
                 { label: 'Artist', name: function(doc) {
@@ -55,12 +55,12 @@ AdminConfig = {
         Vendors: {
             tableColumns: [
                 { label: 'Name', name: 'name' },
-                { label: 'Type', name: function() {
-                        return Vendors.findOne().typeLabel();
+                { label: 'Type', name: function(doc) {
+                        return Vendors.findOne({_id: doc._id}).typeLabel();
                     }
                 },
-                { label: 'Zone', name: function() {
-                    return Vendors.findOne().zoneLabel();
+                { label: 'Zone', name: function(doc) {
+                    return Vendors.findOne({_id: doc._id}).zoneLabel();
                 }
                 },
             ]

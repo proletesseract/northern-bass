@@ -16,16 +16,25 @@ if (Meteor.isClient) {
 
 function getTimeSlotInfo(stage) {
   var timeSlots = TimeSlots.find({stage: stage}).fetch();
-  return _.map(timeSlots, function(timeSlot) {
-    return {
-      _id: timeSlot._id,
-      artist: Artists.findOne({_id: timeSlot.artistId}),
-      image: ArtistImages.findOne({ artistId: timeSlot.artistId }),
-      start: formatDate(new Date(timeSlot.startDate + ' ' + timeSlot.startTime())),
-      end: formatDate(new Date(timeSlot.endDate + ' ' + timeSlot.endTime()))
-    };
-  });
+
+  var formattedTimeSlots = _.map(timeSlots, timeSlotsFormatter);
+
+  return formattedTimeSlots;
 }
+
+function timeSlotsFormatter (timeSlot) {
+
+  var formattedTimeSlot = {
+    _id: timeSlot._id,
+    artist: Artists.findOne({_id: timeSlot.artistId}),
+    image: ArtistImages.findOne({ artistId: timeSlot.artistId }),
+    start: formatDate(new Date(timeSlot.startDate + ' ' + timeSlot.startTime())),
+    end: formatDate(new Date(timeSlot.endDate + ' ' + timeSlot.endTime()))
+  };
+
+  return formattedTimeSlot;
+
+};
 
 function formatDate(date) {
 

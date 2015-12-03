@@ -56,3 +56,7 @@ App.launchScreens({
   "android_xhdpi_portrait": "resources/splashes/android_xhdpi_portrait.png",
   "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png"
 });
+
+App.setPreference('AutoHideSplashScreen', true);
+
+

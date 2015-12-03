@@ -19,22 +19,33 @@ function getTimeSlotInfo(stage) {
 
   var formattedTimeSlots = _.map(timeSlots, timeSlotsFormatter);
 
-  return formattedTimeSlots;
+  var sortedTimeSlots = _.sortBy(formattedTimeSlots, timeSlotSorter);
+
+  return sortedTimeSlots;
 }
 
 function timeSlotsFormatter (timeSlot) {
+
+  var startDate = new Date(timeSlot.startDate + ' ' + timeSlot.startTime());
+  var endDate = new Date(timeSlot.endDate + ' ' + timeSlot.endTime());
 
   var formattedTimeSlot = {
     _id: timeSlot._id,
     artist: Artists.findOne({_id: timeSlot.artistId}),
     image: ArtistImages.findOne({ artistId: timeSlot.artistId }),
-    start: formatDate(new Date(timeSlot.startDate + ' ' + timeSlot.startTime())),
-    end: formatDate(new Date(timeSlot.endDate + ' ' + timeSlot.endTime()))
+    start: formatDate(startDate),
+    startDate: startDate,
+    end: formatDate(endDate),
+    endDate: endDate
   };
 
   return formattedTimeSlot;
 
-};
+}
+
+function timeSlotSorter (timeSlot) {
+  return timeSlot.startDate;
+}
 
 function formatDate(date) {
 

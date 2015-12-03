@@ -3,7 +3,7 @@
   "development": {
     "public": {
       "APP_VERSION": "0.1.5.0",
-      "APP_ID": "73xWmYM6nKmMa5ERB",
+      "APP_ID": "nz.northernbass.app",
       "APP_NAME": "Northern Bass",      
       "ACTIVATE_MUGEN" : true,
       "APP_SERVER": "northernbassapp.uppercase8.com",
@@ -12,7 +12,7 @@
   "production": {
     "public": {
       "APP_VERSION": "0.1.5.0",
-      "APP_ID": "73xWmYM6nKmMa5ERB",
+      "APP_ID": "nz.northernbass.app",
       "APP_NAME": "Northern Bass",      
       "ACTIVATE_MUGEN" : true,
       "APP_SERVER": "northernbassapp.uppercase8.com",

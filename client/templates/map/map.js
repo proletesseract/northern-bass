@@ -81,15 +81,35 @@ initMap = function() {
       });
 
       // Set norhtern bass marker
+      // var nbMarker = new google.maps.Marker({
+      //     position: settlementRd,
+      //     icon: _image,
+      //     map: map,
+      //     title: 'Northern Bass',
+      //     animation: google.maps.Animation.DROP,
+      // });
+      //
+      // nbMarker.setAnimation(google.maps.Animation.BOUNCE);
+
       var nbMarker = new google.maps.Marker({
-          position: settlementRd,
-          icon: _image,
-          map: map,
-          title: 'Northern Bass',
-          animation: google.maps.Animation.DROP,
+        map: map,
+        position: settlementRd,
+        icon: _image,
+        clickable: true,
+        title: 'Northern Bass',
+        animation: google.maps.Animation.DROP
       });
 
-      nbMarker.setAnimation(google.maps.Animation.BOUNCE);
+      //nbMarker.setAnimation(google.maps.Animation.BOUNCE);
+
+      nbMarker.info = new google.maps.InfoWindow({
+        content: '<p class="get-directions">420 Settlement Road,<br>Mangawhai/Kaiwaka<br><small><a target="_blank" href="https://goo.gl/maps/nTDwfSy6yU52">Get Directions</a></small></p> '
+      });
+
+      google.maps.event.addListener(nbMarker, 'click', function() {
+        nbMarker.info.open(map, nbMarker);
+      });
+
 
       //nbMarker.addListener('click', toggleBounce);
 

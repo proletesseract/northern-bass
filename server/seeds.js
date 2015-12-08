@@ -3,8 +3,8 @@ Meteor.startup(function() {
 
   if (Faqs.find().count() === 0) {
     Faqs.insert({
-      title: "Completely synergize resource",
-      description: "Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.",
+      title: "Northern Bass FAQ",
+      description: "This is a test FAQ",
       image: "images/faqs/faq1.jpg"
     });
   }
@@ -12,9 +12,9 @@ Meteor.startup(function() {
   if (TimeSlots.find().count() === 0) {
     TimeSlots.insert({
       startDate: "2015-12-29",
-      endDate: "2015-12-29",
       startHour: '8',
       startMinute: '15',
+      endDate: "2015-12-29",      
       endHour: '9',
       endMinute: '0',
       artistId: "ARTIST_ID",

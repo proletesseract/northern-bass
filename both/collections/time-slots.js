@@ -13,28 +13,28 @@ TimeSlots.helpers({
     startTime: function() {
         var returnTime;
         if(this.startHour < 10) {
-            returnTime = "0"+this.startHour;
+            returnTime = '0'+this.startHour;
         } else {
             returnTime = this.startHour;
         }
         if(this.startMinute == 0) {
-            returnTime += ":0" + this.startMinute;
+            returnTime += ':0' + this.startMinute;
         } else {
-            returnTime += ":" + this.startMinute;
+            returnTime += ':' + this.startMinute;
         }
         return returnTime;
     },
     endTime: function() {
         var returnTime;
         if(this.endHour < 10) {
-            returnTime = "0"+this.endHour;
+            returnTime = '0'+this.endHour;
         } else {
             returnTime = this.endHour;
         }
         if(this.endMinute == 0) {
-            returnTime += ":0" + this.endMinute;
+            returnTime += ':0' + this.endMinute;
         } else {
-            returnTime += ":" + this.endMinute;
+            returnTime += ':' + this.endMinute;
         }
         return returnTime;
     }
@@ -63,17 +63,17 @@ var hours = [
     { label: '10', value: '10' },
     { label: '11', value: '11' },
     { label: '12', value: '12' },
-    { label: '13', value: '13' },
-    { label: '14', value: '14' },
-    { label: '15', value: '15' },
-    { label: '16', value: '16' },
-    { label: '17', value: '17' },
-    { label: '18', value: '18' },
-    { label: '19', value: '19' },
-    { label: '20', value: '20' },
-    { label: '21', value: '21' },
-    { label: '22', value: '22' },
-    { label: '23', value: '23' },
+    { label: '01', value: '13' },
+    { label: '02', value: '14' },
+    { label: '03', value: '15' },
+    { label: '04', value: '16' },
+    { label: '05', value: '17' },
+    { label: '06', value: '18' },
+    { label: '07', value: '19' },
+    { label: '08', value: '20' },
+    { label: '09', value: '21' },
+    { label: '10', value: '22' },
+    { label: '11', value: '23' },
 ];
 
 var minutes = [

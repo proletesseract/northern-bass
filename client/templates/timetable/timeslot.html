@@ -17,13 +17,14 @@
 
                 <div class="row">
                     <div class="col center">
-                        <a id="artistSoundCloud" class="button button-icon icon ion-android-cloud"></a>
+                        <a href="#" onclick="window.open('{{artist.soundcloud}}', '_system')" id="artistSoundCloud" class="button button-icon icon soundcloud"><img src="images/soundcloud.png"></a>
                     </div>
                     <div class="col center">
-                        <a id="artistInfo" class="button button-icon icon ion-information-circled"></a>
-                    </div>
-                    <div class="col center">
-                        <a id="artistFavourite" class="button button-icon icon ion-android-favorite"></a>
+                        {{#if timeslot.state}}
+                            <a href="#" id="artistFavourite" class="button button-icon icon ion-android-favorite fav"></a>
+                        {{else}}
+                            <a href="#" id="artistFavourite" class="button button-icon icon ion-android-favorite"></a>
+                        {{/if}}
                     </div>                    
                 </div>
 

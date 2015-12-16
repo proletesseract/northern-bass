@@ -1,12 +1,12 @@
 <template name="faq">
 
     <li class="panel-faq">
-        <button class="panel-faq-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">{{> ionIcon icon='android-add'}} {{title}}
+        <button class="panel-faq-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">{{title}} {{> ionIcon icon='chevron-down'}}
         </button>
 
         <div class="collapse no-transition" id="{{_id}}">
             <div class="panel-faq-body">
-                <p class="faq-description">{{description}}</p>
+                <p class="faq-description">{{{description}}}</p>
                 <img class="faq-image" src="{{image}}" />
             </div>
         </div>

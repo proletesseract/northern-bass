@@ -45,15 +45,18 @@ and open the template in the editor.
     border: none;
 }
 
-.panel-faq {
+.panel-faq i {
+  float: right;
+  padding-right: 10px;
 }
 
 .panel-faq-heading {
   background-color: $purple;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: left;
+/*  text-transform: uppercase;*/
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 .panel-faq-heading {
@@ -67,6 +70,26 @@ and open the template in the editor.
 
 .faq-description {
   display: inline-block;
+}
+
+.faq-description ul {
+    /*list-style-image: url('');*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-indent: -25px;
+}
+
+.faq-description li { 
+    padding-left: 20px;
+}
+
+.faq-description li:before {
+    content: "❯"; /* Insert content that looks like bullets */
+    padding: 8px;
+    color: #5e419b;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .faq-image {

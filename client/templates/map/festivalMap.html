@@ -1,7 +1,5 @@
 <template name="festivalMap">
-	Festival Map
-
-	<p>Coming Soon</p>
-
-
+	  {{#if error}}
+	    <p>Error: {{error.message}}</p>
+	  {{/if}}
 </template>

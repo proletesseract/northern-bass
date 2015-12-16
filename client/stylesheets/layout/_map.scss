@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 23/08/2015, 5:18:32 PM
     Author     : craigmacgregor
 */
@@ -15,9 +15,18 @@ and open the template in the editor.
   margin-bottom: 0px;
 }
 
+.map-tab-wrap{
+  padding-left:0!important;
+  padding-right:0!important;
+}
+
 #map.nav-tabs{
-  background-color:#291c44;
-  border: none;
+  margin-top:0;
+  background-color:none;
+  border-bottom:solid 4px #5E419B;
+  li{
+    margin:5px 0 0 10px;
+  }
 }
 
 #map.tab-content{
@@ -30,11 +39,8 @@ and open the template in the editor.
   border: none;
   border-radius: 0px;
   color:#FFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 17px;
+  padding:10px 20px;
+  font-size:14px;
 }
 
 #map.nav-tabs > li > a:hover{
@@ -49,4 +55,13 @@ and open the template in the editor.
 	position: fixed!important;
 	height:100%;
 	width:100%;
+}
+
+.get-directions{
+  color:#333;
+  margin-bottom:0;
+  a{
+    color:#FF9D00;
+    text-decoration:underline;
+  }
 }

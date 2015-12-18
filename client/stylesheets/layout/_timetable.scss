@@ -12,31 +12,41 @@ and open the template in the editor.
   margin-bottom: 0px;
 }
 
-#timetable.nav-tabs{
-  background-color:#291c44;
-  border: none;
+.timetable-tab-wrap{
+  padding-left:0!important;
+  padding-right:0!important;
 }
+
+#timetable.nav-tabs{
+  margin-top: 0;
+  background-color: none;
+  border-bottom: solid 4px #5E419B;
+  li{
+    margin: 5px 0 0 10px;
+  }
+}
+
 #timetable.tab-content{
     background-color:#000;
     color:#FFF;
     padding:5px;
 }
+
 #timetable.nav-tabs > li > a{
   border: none;
   border-radius: 0px;
   color:#FFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 17px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
+
 #timetable.nav-tabs > li > a:hover{
   background-color: #5e419b !important;
     border: none;
     border-radius: 0;
     color:#FFF;
 }
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover{

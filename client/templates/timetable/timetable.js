@@ -28,13 +28,13 @@ function timeSlotsFormatter (timeSlot) {
   var startDateString = timeSlot.startDate + 'T' + timeSlot.startTime() + ':00+13:00';
   var startDate = new Date(startDateString);
 
-  console.log(startDateString);
+  // console.log(startDateString);
 
 
   var endDateString = timeSlot.endDate + 'T' + timeSlot.endTime() + ':00+13:00';
   var endDate = new Date(endDateString);
 
-  console.log(endDateString);
+  // console.log(endDateString);
 
   var formattedTimeSlot = {
     _id: timeSlot._id,

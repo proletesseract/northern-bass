@@ -41,8 +41,9 @@ Meteor.startup(function() {
     });
   }
 
-  if (Vendors.find().count() === 0) {
+  if (Vendors.find().count() === 1) {
     Vendors.insert({
+      position: 1,
       name: "The Lucky Taco",
       description: "Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.",
       zone: 1,

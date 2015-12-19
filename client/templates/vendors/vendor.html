@@ -2,12 +2,13 @@
 
     <li class="panel-vendor">
         <button class="panel-vendor-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">
-            {{name}} {{> ionIcon icon='chevron-down'}}
+            {{position}} {{name}} {{> ionIcon icon='chevron-down'}}
             <span class="options">
                 {{#if glutenFree}} -GF{{/if}}
                 {{#if vegetarian}} -V{{/if}}
                 {{#if vegan}} -VG{{/if}}
             </span>
+            {{type}}
         </button>
 
         <div class="collapse no-transition" id="{{_id}}">

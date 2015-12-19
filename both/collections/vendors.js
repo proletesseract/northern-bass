@@ -40,6 +40,12 @@ var Schemas = {};
 
 
 Schemas.Vendors = new SimpleSchema({
+    position: {
+        type: String,
+        label: "Position",
+        max: 2,
+        optional: false
+    },
     name: {
         type: String,
         label: "Name",

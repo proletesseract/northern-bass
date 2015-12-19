@@ -66,6 +66,7 @@ and open the template in the editor.
 
 .vendor-description {
   display: inline-block;
+  width: 100%;
 }
 
 .vendor-image {
@@ -78,3 +79,22 @@ and open the template in the editor.
   font-weight: bold;
   padding-left: 10px;
 }
+
+/*.item-name td {
+  border:none;
+}
+.item-price {
+  border:none;
+}
+
+.table > tbody > tr > td {
+  border: none;
+}*/
+
+/*<div class="table-responsive">
+  <table class="table price-list">
+    <tr class="menu-item"><td class="item-name">Food</td><td class="item-price">$10.00</td></tr>
+    <tr class="menu-item"><td class="item-name">Food</td><td class="item-price">$10.00</td></tr>
+    <tr class="menu-item"><td class="item-name">Food</td><td class="item-price">$10.00</td></tr>
+  </table>
+</div>*/

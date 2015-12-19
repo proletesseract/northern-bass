@@ -58,6 +58,29 @@
                 </ul>
               </div>
 
+              <div role="tabpanel" class="tab-pane active" id="mainStage">
+                <ul>
+                  {{#each stage4}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="jungleStage">
+                <ul>
+                  {{#each stage5}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="thirdStage">
+                <ul>
+                  {{#each stage6}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
+              </div>
             </div>
 
           </div>         

@@ -11,6 +11,15 @@ if (Meteor.isClient) {
     stage3: function(){
       return getTimeSlotInfo(3);
     }
+    stage4: function(){
+      return getTimeSlotInfo(4);
+    }
+    stage5: function(){
+      return getTimeSlotInfo(5);
+    }
+    stage6: function(){
+      return getTimeSlotInfo(6);
+    }            
   });
 }
 

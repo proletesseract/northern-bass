@@ -45,16 +45,19 @@ and open the template in the editor.
     border: none;
 }
 
-.panel-vendor {
+.panel-vendor i {
+  float: right;
+  padding-right: 10px;
 }
 
 .panel-vendor-heading {
   background-color: $purple;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-left: 7px;
-  padding-bottom: 6px;
-  margin-bottom: 2px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  color: $white;
+  font-size: 1em;
 }
 
 .panel-vendor-body {
@@ -69,4 +72,9 @@ and open the template in the editor.
   float: left;
   display: inline-block;
   padding: 5px;
+}
+
+.options {
+  font-weight: bold;
+  padding-left: 10px;
 }

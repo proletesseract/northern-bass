@@ -1,14 +1,20 @@
 <template name="vendor">
 
     <li class="panel-vendor">
-        <button class="panel-vendor-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}" style="background-color:#{{colour}};">
-            <span style="color:#{{titleColour}}">{{position}} {{name}} {{> ionIcon icon='chevron-down'}}</span>
+        <button class="panel-vendor-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}" style="background-color:#{{bgColour}};">
+            {{#if titleColour}}
+                <span style="color:#{{titleColour}}">{{name}} {{> ionIcon icon='chevron-down'}}</span>
+
+            {{else}}
+                {{name}} {{> ionIcon icon='chevron-down'}}
+
+            {{/if}}
             <span class="options">
                 {{#if glutenFree}} -GF{{/if}}
                 {{#if vegetarian}} -V{{/if}}
                 {{#if vegan}} -VG{{/if}}
             </span>
-            {{type}}
+            
         </button>
 
         <div class="collapse no-transition" id="{{_id}}">

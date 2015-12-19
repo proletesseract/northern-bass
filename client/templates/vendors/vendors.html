@@ -15,17 +15,39 @@
     {{#ionContent}}
       <div class="row">
         <div class="col">
-          
-          <ul>
-          {{#each vendors}}
-            {{>vendor}}
-          {{/each}}
-          </ul>
+
+          <div class="container-fluid text-center p-a-3">
+            <span class="nbBar">NB Bar</span>
+            <ul class="vendor-list">
+            {{#each type2}}
+              {{>vendor}}
+            {{/each}}
+            </ul>
+          </div>
+
+          <div class="container-fluid text-center p-a-3">
+            <span class="nbMerch p-a-3">NB Festival Merch</span>
+            <ul class="vendor-list">
+            {{#each type3}}
+              {{>vendor}}
+            {{/each}}
+            </ul>
+          </div>          
+
+          <div class="text-center">          
+            <span class="nbFood">Food & Beverage</span>
+            <ul class="vendor-list">
+            {{#each type1}}
+              {{>vendor}}
+            {{/each}}
+            </ul>
+          </div>
 
         </div>
       </div>
 
     {{/ionContent}}
   {{/ionView}}
+
 
 </template>

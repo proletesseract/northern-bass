@@ -12,6 +12,8 @@ var vendorTypes = [
     { label: 'Merchandise', value: 3 }
 ];
 
+var defaultTitleColour = "000000";
+
 Vendors.helpers({
     zoneLabel: function() {
 

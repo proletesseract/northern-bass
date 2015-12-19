@@ -10,8 +10,28 @@ if (Meteor.isClient) {
   // This code only runs on the client
 
   Template.vendors.helpers({
-    vendors: function(){
-        return Vendors.find({});
+    type1: function(){
+        return getVendorType(1);
+    },
+    type2: function(){
+    	return getVendorType(2);
+    },
+    type3: function(){
+    	return getVendorType(3);
     }
   });
+}
+
+function getVendorType(type) {
+  var vendors = Vendors.find({type: type}, {sort: {position: 1}}).fetch();
+
+  // var formattedTimeSlots = _.map(timeSlots, timeSlotsFormatter);
+
+  // var sortedTimeSlots = _.sortBy(formattedTimeSlots, timeSlotSorter);
+
+  return vendors;
+}
+
+function vendorSorter (timeSlot) {
+  return timeSlot.startDate;
 }

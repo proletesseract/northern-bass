@@ -66,6 +66,7 @@ and open the template in the editor.
 
 .vendor-description {
   display: inline-block;
+  width: 100%;
 }
 
 .vendor-image {
@@ -77,4 +78,15 @@ and open the template in the editor.
 .options {
   font-weight: bold;
   padding-left: 10px;
+}
+
+.item-name td {
+  border:none;
+}
+.item-price {
+  border:none;
+}
+
+.table > tbody > tr > td {
+  border: none;
 }

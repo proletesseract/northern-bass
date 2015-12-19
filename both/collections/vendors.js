@@ -40,6 +40,12 @@ var Schemas = {};
 
 
 Schemas.Vendors = new SimpleSchema({
+    position: {
+        type: String,
+        label: "Position",
+        max: 2,
+        optional: false
+    },
     name: {
         type: String,
         label: "Name",
@@ -97,6 +103,18 @@ Schemas.Vendors = new SimpleSchema({
         label: "-- Vegan",
         optional: true
     },
+    bgColour: {
+        type: String,
+        label: "Background Colour",
+        max: 6,
+        optional: true
+    },
+    titleColour: {
+        type: String,
+        label: "Text Colour",
+        max: 6,
+        optional: true
+    }
 });
 
 Vendors.attachSchema(Schemas.Vendors);

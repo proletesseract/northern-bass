@@ -54,6 +54,7 @@ AdminConfig = {
         },
         Vendors: {
             tableColumns: [
+                { label: 'Position', name: 'position' },
                 { label: 'Name', name: 'name' },
                 { label: 'Type', name: function(doc) {
                         return Vendors.findOne({_id: doc._id}).typeLabel();

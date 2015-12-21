@@ -18,18 +18,31 @@
         <div class="col-xs-12">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" id="timetable" role="tablist">
-              <li role="presentation" class="active">
+
+              <li role="presentation">
                 <a href="#29-Jungle" aria-controls="29-Jungle" role="tab" data-toggle="tab">29-Jungle</a>                
               </li>
               
               <li role="presentation">
                 <a href="#30-Main" aria-controls="30-Main" role="tab" data-toggle="tab">30-Main</a>
+              </li>      
+                           
+              <li role="presentation">
+                <a href="#30-Jungle" aria-controls="30-Jungle" role="tab" data-toggle="tab">30-Jungle</a>
               </li>
 
               <li role="presentation">
                 <a href="#31-Main" aria-controls="31-Main" role="tab" data-toggle="tab">31-Main</a>
-              </li>              
-                           
+              </li>                      
+
+              <li role="presentation">
+                <a href="#31-Jungle" aria-controls="31-Jungle" role="tab" data-toggle="tab">31-Jungle</a>
+              </li>
+
+              
+              <li role="presentation">
+                <a href="#31-Oasis" aria-controls="31-Oasis" role="tab" data-toggle="tab">31-Oasis</a>
+              </li>                           
             </ul>
 
             <!-- Tab panes -->
@@ -43,15 +56,7 @@
                 </ul>
               </div>
 
-              <div role="tabpanel" class="tab-pane" id="jungleStage">
-                <ul>
-                  {{#each stage2}}
-                    {{> timeslot}}
-                  {{/each}}
-                </ul>
-              </div>
-
-              <div role="tabpanel" class="tab-pane active" id="mainStage">
+              <div role="tabpanel" class="tab-pane" id="30-Main">
                 <ul>
                   {{#each stage1}}
                     {{> timeslot}}
@@ -59,36 +64,7 @@
                 </ul>
               </div>
 
-            </div>
-
-          </div>         
-        </div>
-
-
-
-      <div class="row no-gutter">
-        <div class="col-xs-12">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="timetable" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#30-Jungle" aria-controls="30-Jungle" role="tab" data-toggle="tab">30-Jungle</a>
-              </li>
-
-              <li role="presentation">
-                <a href="#31-Jungle" aria-controls="31-Jungle" role="tab" data-toggle="tab">31-Jungle</a>
-              </li>
-
-              
-              <li role="presentation">
-                <a href="#31-Oasis" aria-controls="31-Oasis" role="tab" data-toggle="tab">31-Oasis</a>
-              </li>
-                           
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-
-              <div role="tabpanel" class="tab-pane active" id="mainStage">
+              <div role="tabpanel" class="tab-pane" id="30-Jungle">
                 <ul>
                   {{#each stage4}}
                     {{> timeslot}}
@@ -96,6 +72,14 @@
                 </ul>
               </div>
 
+              <div role="tabpanel" class="tab-pane" id="31-Main">
+                <ul>
+                  {{#each stage2}}
+                    {{> timeslot}}
+                  {{/each}}
+                </ul>
+              </div>
+              
               <div role="tabpanel" class="tab-pane" id="31-Jungle">
                 <ul>
                   {{#each stage5}}
@@ -110,12 +94,14 @@
                     {{> timeslot}}
                   {{/each}}
                 </ul>
-              </div>
+              </div>              
 
             </div>
 
           </div>         
         </div>
+
+
     {{/ionContent}}
   {{/ionView}}
 

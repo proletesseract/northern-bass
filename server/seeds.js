@@ -18,7 +18,9 @@ Meteor.startup(function() {
       endHour: '9',
       endMinute: '0',
       artistId: "ARTIST_ID",
-      stage: 1
+      stage: 1,
+      bgColour: "FFF",
+      titleColour: "CCC"
     });
   }
 

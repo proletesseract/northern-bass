@@ -159,13 +159,28 @@ Schemas.TimeSlot = new SimpleSchema({
         autoform:  {
             options: function() {
                 return [
-                    { label: 'Stage 1', value: 1 },
-                    { label: 'Stage 2', value: 2 },
-                    { label: 'Stage 3', value: 3 }
+                    { label: '30-Main', value: 1 },
+                    { label: '31-Main', value: 2 },
+                    { label: '29-Jungle', value: 3 },
+                    { label: '30-Jungle', value: 4 },
+                    { label: '31-Jungle', value: 5 },
+                    { label: '31-Oasis', value: 6 }
                 ];
             }
-        }
-    }
+        },
+    },
+    bgColour: {
+        type: String,
+        label: "Background Colour",
+        max: 6,
+        optional: true
+    },
+    titleColour: {
+        type: String,
+        label: "Text Colour",
+        max: 6,
+        optional: true
+    }    
 
 });
 

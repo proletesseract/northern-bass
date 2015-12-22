@@ -28,17 +28,8 @@ if (Meteor.isClient) {
 }
 
 function getVendorInfo(type) {
-  // var vendors = Vendors.find({type: type}, {sort: {position: 1}}).fetch();
   var vendors = Vendors.find({type: type}).fetch();
-
   var formattedVendors = _.map(vendors, vendorsFormatter);
-
-  // var images = {
-  //   image: VendorImages.findOne({ vendorId: vendors.vendorId })
-  // };
-  // console.log(images);
-
-  // var sortedTimeSlots = _.sortBy(formattedTimeSlots, timeSlotSorter);
   var sortedVendors = _.sortBy(formattedVendors, vendorSorter);
 
   return sortedVendors;
@@ -56,7 +47,7 @@ function vendorsFormatter(vendor){
     glutenFree: vendor.glutenFree,
     vegetarian: vendor.vegetarian,
     vegan: vendor.vegan,
-    image: VendorImages.findOne({ _id: vendor.vendorId })
+    image: VendorImages.findOne({ vendorId: vendor._id })
   };
   console.log(formattedVendor);
 

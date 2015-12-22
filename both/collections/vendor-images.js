@@ -25,7 +25,6 @@ Schemas.VendorImages = new SimpleSchema({
                         value: vendor._id
                     };
                 });
-
             }
         }
     },

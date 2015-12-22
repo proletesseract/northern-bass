@@ -11,13 +11,13 @@ if (Meteor.isClient) {
 
   Template.vendors.helpers({
     type1: function(){
-      return getVendorType(1);
+      return getVendorInfo(1);
     },
     type2: function(){
-    	return getVendorType(2);
+    	return getVendorInfo(2);
     },
     type3: function(){
-    	return getVendorType(3);
+    	return getVendorInfo(3);
     }
   });
 
@@ -27,15 +27,19 @@ if (Meteor.isClient) {
 
 }
 
-function getVendorType(type) {
+function getVendorInfo(type) {
   // var vendors = Vendors.find({type: type}, {sort: {position: 1}}).fetch();
   var vendors = Vendors.find({type: type}).fetch();
 
-  // var formattedVendors = _.map(vendors, vendorsFormatter);
+  var formattedVendors = _.map(vendors, vendorsFormatter);
 
-  var sortedVendors = _.sortBy(vendors, vendorSorter);
+  // var images = {
+  //   image: VendorImages.findOne({ vendorId: vendors.vendorId })
+  // };
+  // console.log(images);
 
   // var sortedTimeSlots = _.sortBy(formattedTimeSlots, timeSlotSorter);
+  var sortedVendors = _.sortBy(formattedVendors, vendorSorter);
 
   return sortedVendors;
 }
@@ -44,8 +48,15 @@ function vendorsFormatter(vendor){
 
   var formattedVendor = {
     _id: vendor._id,
-    vendor: Vendors.findOne({_id: vendor.vendorId}),
-    image: VendorImages.findOne({ vendorId: vendor.vendorId })
+    position: vendor.position,
+    name: vendor.name,
+    description: vendor.description,
+    zone: vendor.zone,
+    type: vendor.type,
+    glutenFree: vendor.glutenFree,
+    vegetarian: vendor.vegetarian,
+    vegan: vendor.vegan,
+    image: VendorImages.findOne({ _id: vendor.vendorId })
   };
   console.log(formattedVendor);
 

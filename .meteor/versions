@@ -8,7 +8,6 @@ aldeed:collection2@2.6.1
 aldeed:simple-schema@1.3.3
 aldeed:tabular@1.4.2
 aldeed:template-extension@3.4.3
-autopublish@1.0.4
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -32,6 +31,8 @@ ddp-rate-limiter@1.0.0
 ddp-server@1.2.2
 deps@1.0.9
 diff-sequence@1.0.1
+dispatch:kernel@0.0.6
+dispatch:request-animation-frame@0.0.1
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
@@ -40,6 +41,13 @@ fastclick@1.0.7
 fortawesome:fontawesome@4.5.0
 fourseven:scss@3.4.1
 geojson-utils@1.0.4
+ground:db@0.3.14
+ground:dictionary@0.2.1
+ground:localstorage@0.1.9
+ground:minimax@1.1.3
+ground:servertime@0.0.3
+ground:store@0.1.2
+ground:util@0.1.17
 hashwin:ionic-sass@0.3.3
 hashwin:ionicons-sass@0.1.9
 hot-code-push@1.0.0
@@ -86,7 +94,10 @@ npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
 promise@0.5.1
+raix:eventemitter@0.1.3
 raix:handlebar-helpers@0.2.5
+raix:onetimeout@1.0.4
+raix:stubfence@1.0.3
 random@1.0.5
 rate-limit@1.0.0
 reactive-dict@1.1.3

@@ -14,4 +14,6 @@ if (Meteor.isClient) {
         return Faqs.find({});
     }
   });
+
+  Meteor.subscribe("faqs");
 }

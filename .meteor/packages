@@ -16,7 +16,6 @@ accounts-base
 accounts-password
 alanning:roles
 yogiben:admin
-autopublish
 bootstrap
 tsega:bootstrap3-datetimepicker
 zimme:active-route
@@ -41,3 +40,4 @@ meteoric:ionic
 accounts-ui
 mdg:geolocation
 timbrandin:slick
+ground:db

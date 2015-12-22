@@ -21,6 +21,12 @@ if (Meteor.isClient) {
       return getTimeSlotInfo(6);
     }
   });
+
+  Meteor.subscribe("time-slots");
+
+  Meteor.subscribe("artists");
+
+  Meteor.subscribe("artist-images");
 }
 
 function getTimeSlotInfo(stage) {
@@ -90,14 +96,17 @@ function formatDate(date) {
 
 }
 
-Template.timeslot.events({
-    'click #artistFavourite':function(event,template) {
-        var state = MyCollection.findOne({}).state
-        MyCollection.update({}, {$set:{state:!state}});
-    }
-});
+// Template.timeslot.events({
+//     'click #artistFavourite':function(event,template) {
+//         var state = MyCollection.findOne({}).state
+//         MyCollection.update({}, {$set:{state:!state}});
+//     }
+// });
 
 Template.timeslot.helpers({
+    'timeslots': function(){
+      return TimeSlots.find({});
+    },
     item:function() {
         return MyCollection.findOne({});
     }

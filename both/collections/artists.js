@@ -32,6 +32,3 @@ Schemas.Artist = new SimpleSchema({
 });
 
 Artists.attachSchema(Schemas.Artist);
-
-
-

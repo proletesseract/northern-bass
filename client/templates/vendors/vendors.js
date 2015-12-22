@@ -11,7 +11,7 @@ if (Meteor.isClient) {
 
   Template.vendors.helpers({
     type1: function(){
-        return getVendorType(1);
+      return getVendorType(1);
     },
     type2: function(){
     	return getVendorType(2);
@@ -20,18 +20,44 @@ if (Meteor.isClient) {
     	return getVendorType(3);
     }
   });
+
+  Meteor.subscribe("vendors");
+
+  Meteor.subscribe("vendor-images");
+
 }
 
 function getVendorType(type) {
-  var vendors = Vendors.find({type: type}, {sort: {position: 1}}).fetch();
+  // var vendors = Vendors.find({type: type}, {sort: {position: 1}}).fetch();
+  var vendors = Vendors.find({type: type}).fetch();
 
-  // var formattedTimeSlots = _.map(timeSlots, timeSlotsFormatter);
+  // var formattedVendors = _.map(vendors, vendorsFormatter);
+
+  var sortedVendors = _.sortBy(vendors, vendorSorter);
 
   // var sortedTimeSlots = _.sortBy(formattedTimeSlots, timeSlotSorter);
 
-  return vendors;
+  return sortedVendors;
 }
 
-function vendorSorter (timeSlot) {
-  return timeSlot.startDate;
+function vendorsFormatter(vendor){
+
+  var formattedVendor = {
+    _id: vendor._id,
+    vendor: Vendors.findOne({_id: vendor.vendorId}),
+    image: VendorImages.findOne({ vendorId: vendor.vendorId })
+  };
+  console.log(formattedVendor);
+
+  return formattedVendor;
 }
+
+function vendorSorter (vendor) {
+  return vendor.position;
+}
+
+Template.vendors.helpers({
+  'vendors': function(){
+    return Vendors.find({});
+  }
+});

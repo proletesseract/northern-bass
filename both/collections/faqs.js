@@ -28,4 +28,3 @@ Schemas.Faqs = new SimpleSchema({
 Faqs.attachSchema(Schemas.Faqs);
 
 
-

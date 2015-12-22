@@ -1,5 +1,6 @@
 TimeSlots = new Mongo.Collection("time-slots");
 
+
 TimeSlots.helpers({
     artist: function() {
         console.log(this);
@@ -183,5 +184,9 @@ Schemas.TimeSlot = new SimpleSchema({
     }    
 
 });
+
+// TimeSlots = new Meteor.Collection('Timeslots');
+
+// if (Meteor.isCordova) Ground.Collection(TimeSlots);
 
 TimeSlots.attachSchema(Schemas.TimeSlot);

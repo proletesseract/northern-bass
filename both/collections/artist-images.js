@@ -43,5 +43,3 @@ Schemas.ArtistImages = new SimpleSchema({
 });
 
 ArtistImages.attachSchema(Schemas.ArtistImages);
-
-

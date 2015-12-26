@@ -1,4 +1,4 @@
-TimeSlots = new Mongo.Collection("time-slots");
+TimeSlots = new Ground.Collection("time-slots");
 
 
 TimeSlots.helpers({

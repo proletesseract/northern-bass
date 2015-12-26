@@ -1,4 +1,4 @@
-Artists = new Mongo.Collection("artists");
+Artists = new Ground.Collection("artists");
 
 var Schemas = {};
 

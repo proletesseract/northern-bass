@@ -1,4 +1,4 @@
-VendorImages = new Mongo.Collection("vendor-images");
+VendorImages = new Ground.Collection("vendor-images");
 
 VendorImages.helpers({
     vendor: function() {

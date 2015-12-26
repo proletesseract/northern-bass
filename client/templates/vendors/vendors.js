@@ -47,9 +47,11 @@ function vendorsFormatter(vendor){
     glutenFree: vendor.glutenFree,
     vegetarian: vendor.vegetarian,
     vegan: vendor.vegan,
-    image: VendorImages.findOne({ vendorId: vendor._id })
+    image: VendorImages.findOne({ vendorId: vendor._id }),
+    bgColour: vendor.bgColour,
+    titleColour: vendor.titleColour
   };
-  console.log(formattedVendor);
+  // console.log(formattedVendor);
 
   return formattedVendor;
 }

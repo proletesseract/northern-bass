@@ -1,4 +1,4 @@
-ArtistImages = new Mongo.Collection("artist-images");
+ArtistImages = new Ground.Collection("artist-images");
 
 ArtistImages.helpers({
     artist: function() {

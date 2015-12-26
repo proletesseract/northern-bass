@@ -17,7 +17,12 @@ and open the template in the editor.
 	text-transform: uppercase;
 	padding-top: 15px;
 	padding-bottom: 5px;
-	margin-bottom: 2px;
+	margin-bottom: 0px;
+	border-top: 1px solid white;
+}
+
+.panel-home-heading.light {
+	background-color: #7A5BBB;
 }
 
 .panel-home-heading a.panel-title > h3 {

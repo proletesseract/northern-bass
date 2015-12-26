@@ -23,5 +23,32 @@ if (Meteor.isServer){
 
     Meteor.publish("vendor-images", function(){
         return VendorImages.find({});
-    });    
+    });
+
+
+    // Offline Collections
+
+    // Meteor.publish("offlineArtist-images", function(){
+    //     return OfflineArtistImages.find({});
+    // });
+
+    // Meteor.publish("offlineArtists", function(){
+    //     return OfflineArtists.find({});
+    // });
+
+    // Meteor.publish("offlineFaqs", function(){
+    //     return OfflineFaqs.find({});
+    // });
+
+    // Meteor.publish("offlineTime-slots", function(){
+    //     return OfflineTimeSlots.find({});
+    // });
+
+    // Meteor.publish("offlineVendors", function(){
+    //     return OfflineVendors.find({});
+    // });
+
+    // Meteor.publish("offlineVendor-images", function(){
+    //     return OfflineVendorImages.find({});
+    // });
 }

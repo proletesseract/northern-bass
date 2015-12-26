@@ -20,7 +20,7 @@ and open the template in the editor.
 #timetable.nav-tabs{
   margin-top: 0;
   background-color: none;
-  border-bottom: solid 4px #5E419B;
+  border-bottom: solid 1px #FFF;
   li{
     margin: 5px 0 0 10px;
   }
@@ -64,7 +64,8 @@ and open the template in the editor.
   padding-top: 14px;
   padding-left: 6px;
   padding-bottom: 6px;
-  margin-bottom: 2px;
+/*  margin-bottom: 2px;*/
+  border-bottom: 1px solid white;
 }
 
 .panel-artist-body {

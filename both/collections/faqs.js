@@ -1,4 +1,4 @@
-Faqs = new Mongo.Collection("faqs");
+Faqs = new Ground.Collection("faqs");
 
 var Schemas = {};
 
@@ -27,4 +27,4 @@ Schemas.Faqs = new SimpleSchema({
 
 Faqs.attachSchema(Schemas.Faqs);
 
-
+// if(Meteor.isCordova) Ground.Collection(faqs);

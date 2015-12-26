@@ -1,4 +1,4 @@
-Vendors = new Mongo.Collection("vendors");
+Vendors = new Ground.Collection("vendors");
 
 var zones = [
     { label: 'Zone 1', value: 1 },

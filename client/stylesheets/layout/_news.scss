@@ -68,6 +68,7 @@ and open the template in the editor.
 .news-description {
   display: inline-block;
   width: 100%;
+  text-align: left;
 }
 
 .news-image {
@@ -80,10 +81,11 @@ and open the template in the editor.
   color: #F4F4F4;
   font-size: 2em;
   font-weight: 900;
-  padding: 50px;
+  padding: 10px;
+  width: 100%;
 }
 
-.news-list {
+.news-list ul {
   padding-top: 10px;
   padding-bottom: 20px;
 }

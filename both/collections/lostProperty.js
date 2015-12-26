@@ -55,7 +55,7 @@ Schemas.LostProperty = new SimpleSchema({
         type: String,
         label: "UserId",
         optional: true
-    },
+    }
 });
 
 LostProperty.attachSchema(Schemas.LostProperty);

@@ -1,21 +1,13 @@
-<template name="news">
+<template name="newsItem">
 
     <li class="panel-news">
-        <button class="panel-news-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}" style="background-color:#{{bgColour}};">
-            {{#if titleColour}}
-                <span style="color:#{{titleColour}}">{{name}} {{> ionIcon icon='chevron-down'}}</span>
-
-            {{else}}
-                {{name}} {{> ionIcon icon='chevron-down'}}
-
-            {{/if}}
-            
+        <button class="panel-news-heading full-width" type="button" data-toggle="collapse" data-target="#{{_id}}">{{position}} - {{title}} {{> ionIcon icon='chevron-down'}}
         </button>
 
         <div class="collapse no-transition" id="{{_id}}">
             <div class="panel-news-body">
                 <p class="news-description">{{{description}}}</p>
-                <img class="news-image" src="{{image.image}}" />
+                <img class="news-image" src="{{image}}" />
             </div>
         </div>
 

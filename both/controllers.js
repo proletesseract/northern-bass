@@ -20,6 +20,8 @@ MapController = AppController.extend({});
 
 FaqsController = AppController.extend({});
 
+NewsController = AppController.extend({});
+
 LostController = AppController.extend({});
 
 VendorsController = AppController.extend({});

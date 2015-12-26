@@ -10,7 +10,7 @@ if (Meteor.isClient) {
   // This code only runs on the client
 
   Template.news.helpers({
-    news: function(){
+    showNews: function(){
       return getNews();
     }
   });
@@ -20,7 +20,7 @@ if (Meteor.isClient) {
 }
 
 function getNews() {
-  var news = News.fetch();
+  var news = News.find().fetch();
   var formattedNews = _.map(news, newsFormatter);
   var sortedNews = _.sortBy(formattedNews, newsItemSorter);
 
@@ -36,7 +36,7 @@ function newsFormatter(newsItem){
     description: newsItem.description,
     image: newsItem.image
   };
-  // console.log(formattedVendor);
+  console.log(formattedNewsItem);
 
   return formattedNewsItem;
 }

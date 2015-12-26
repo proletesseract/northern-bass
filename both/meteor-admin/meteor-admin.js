@@ -73,6 +73,14 @@ AdminConfig = {
                 { label: 'Email', name: 'email' },
                 { label: 'Phone Number', name: 'phoneNumber' }
             ]
+        },
+        News: {
+            tableColumns: [
+                { label: 'Position', name: 'position' },
+                { label: 'Title', name: 'title' },
+                { label: 'Description', name: 'description' },
+                { label: 'Image', name: 'image' }
+            ]
         }
     }
 };

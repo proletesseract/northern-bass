@@ -86,9 +86,7 @@ Meteor.startup(function() {
       position: 1,
       title: "News Item",
       description: "News update description",
-      image: "image1.jpg",
-      date: "2015-12-30",
-      time: "01:15:00"
+      image: "images/news/mitch.jpg"
     });
   }
 

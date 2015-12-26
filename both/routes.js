@@ -18,6 +18,10 @@ Router.route('/faqs', {
   name: 'faqs'
 });
 
+Router.route('/news', {
+  name: 'news'
+});
+
 Router.route('/lost', {
   name: 'lost'
 });

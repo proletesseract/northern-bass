@@ -13,6 +13,10 @@ if (Meteor.isServer){
         return Faqs.find({});
     });
 
+    Meteor.publish("news", function(){
+        return News.find({});
+    });
+
     Meteor.publish("time-slots", function(){
         return TimeSlots.find({});
     });

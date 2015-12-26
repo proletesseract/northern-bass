@@ -1,0 +1,35 @@
+<template name="news">
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton class="button" text=false}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 id="navTitle" class="title">News</h1>
+    {{> menuButton}}    
+  {{/contentFor}}
+
+  
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="row">
+        <div class="col">
+
+          <div class="container-fluid text-center p-a-3">
+            <span class="news">NB News / Updates</span>
+            <ul class="news-list">
+            {{#each news}}
+              {{>newsItem}}
+            {{/each}}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    {{/ionContent}}
+  {{/ionView}}
+
+
+</template>

@@ -36,7 +36,7 @@ function newsFormatter(newsItem){
     description: newsItem.description,
     image: newsItem.image
   };
-  console.log(formattedNewsItem);
+  // console.log(formattedNewsItem);
 
   return formattedNewsItem;
 }
